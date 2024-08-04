@@ -88,52 +88,62 @@ const seasons = {
             {
                 title: "3 сезон 10 серия | XIV век",
                 thumbnail: imgS3E10,
-                videoID: "s3e10"
+                videoID: "s3e10",
+                src: "https://drive.google.com/file/d/1Ul2FE-sQMJ4HFmSxXruAu4QZFlB6ox1X/preview"
             },
             {
                 title: "3 сезон 9 серия | Всё точно приходит в норму",
                 thumbnail: imgS3E9,
-                videoID: "s3e9"
+                videoID: "s3e9",
+                src: "https://drive.google.com/file/d/1_zcF1DYcVnvVolDkQ5ovwgMxCZXKVL0n/preview"
             },
             {
                 title: "3 сезон 8 серия | От вторжения к вторжению",
                 thumbnail: imgS3E8,
-                videoID: "s3e8"
+                videoID: "s3e8",
+                src: "https://drive.google.com/file/d/1zvLkPlpEltwkszbv-0TrapebvqrZLZUV/preview"
             },
             {
                 title: "3 сезон 7 серия | Потерянный Эрикград, Рафталия и Владо-Никитский Раскол",
                 thumbnail: imgS3E7,
-                videoID: "s3e7"
+                videoID: "s3e7",
+                src: "https://drive.google.com/file/d/1OC4_cEDX-sk2THAdR9f0wwod_ZkxR2LU/preview"
             },
             {
                 title: "3 сезон 6 серия | Кошмар",
                 thumbnail: imgS3E6,
-                videoID: "s3e6"
+                videoID: "s3e6",
+                src: "https://drive.google.com/file/d/1BMuRr3WyT0Qk0C7DLzTTUFHF9V2xmp5b/preview"
             },
             {
                 title: "3 сезон 5 серия | Начало Нового Возрождения",
                 thumbnail: imgS3E5,
-                videoID: "s3e5"
+                videoID: "s3e5",
+                src: "https://drive.google.com/file/d/1m9mvxg_y87wNyvsVedZ7gtTRNqQbD-pw/preview"
             },
             {
                 title: "3 сезон 4 серия | Конец близко",
                 thumbnail: imgS3E4,
-                videoID: "s3e4"
+                videoID: "s3e4",
+                src: "https://drive.google.com/file/d/1Vboj8mTB0AgSdxcp8w5xaiLOP35cnj4I/preview"
             },
             {
                 title: "3 сезон 3 серия | Проблемы обоих сторон",
                 thumbnail: imgS3E3,
-                videoID: "s3e3"
+                videoID: "s3e3",
+                src: "https://drive.google.com/file/d/1n0vuzcRBt90OtVbZlfgT50K4D2XUGbt3/preview"
             },
             {
                 title: "3 сезон 2 серия | Кулсториробоб навсегда",
                 thumbnail: imgS3E2,
-                videoID: "s3e2"
+                videoID: "s3e2",
+                src: "https://drive.google.com/file/d/1pQlbFwKoFbm5y6MyK0whtJfZN0hK7OCc/preview"
             },
             {
                 title: "3 сезон 1 серия | И всё спокойнее становится жить... | 1 - 13 декабря",
                 thumbnail: imgS3E1,
-                videoID: "s3e1"
+                videoID: "s3e1",
+                src: "https://drive.google.com/file/d/1pkVzWc46lOo2YAwMAUz9i9Up8yT05bbz/preview"
             }
         ]
     },

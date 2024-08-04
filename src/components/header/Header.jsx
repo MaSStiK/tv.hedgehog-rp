@@ -2,10 +2,10 @@
 import Image from "next/image"
 import { useRouter } from 'next/navigation';
 import ButtonImage from "@/components/ButtonImage/ButtonImage"
-import imgLogo from "@/assets/logo.png"
-import imgHome from "@/assets/svg/Home.svg"
+import imgLogoTV from "@/assets/logotype-tv.png"
+import imgLogo from "@/assets/logotype.png"
 
-import "./header.css"
+import "./Header.css"
 
 export default function Header() {
     const { push } = useRouter();
@@ -13,18 +13,17 @@ export default function Header() {
     return (
         <header>
             <div className="header__content">
-                <button className="tp header__button" onClick={() => push("/")}>
-                    <Image
-                        src={imgLogo}
-                        alt="logo"
-                        draggable="false"
-                        
-                    />
-                </button>
+                <ButtonImage
+                    className="tp header__button"
+                    src={imgLogoTV}
+                    alt="logo"
+                    text="Ежиное Телевидение"
+                    onClick={() => push("/")}
+                />
 
                 <ButtonImage
-                    className="tp"
-                    src={imgHome}
+                    className="tp header__button"
+                    src={imgLogo}
                     alt="home"
                     text="Основной сайт"
                     onClick={() => window.open("https://hedgehog-rp.ru/", "_self")}

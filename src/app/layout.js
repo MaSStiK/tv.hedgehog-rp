@@ -1,8 +1,9 @@
 import { Montserrat } from "next/font/google";
 
 import "./app.css"; 
+import "./app-phone.css"; 
 import "./styles/style.css";
-import Header from "@/components/header/header";
+import Header from "@/components/Header/Header.jsx";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -13,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="ru">
             <body className={montserrat.className}>
                 <Header />
                 

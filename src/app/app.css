@@ -13,7 +13,7 @@ body {
 article {
     width: 100%;
     height: 100%; /* Высота во всю страницу */
-    padding: calc(50px + var(--gap-small)) 0 var(--gap-small) 0;
+    padding: calc(50px + var(--gap-medium)) var(--gap-medium) var(--gap-medium) var(--gap-medium);
     overflow-y: auto; /* scroll обычный */
     overflow-x: hidden;
     /* -ms-overflow-style: -ms-autohiding-scrollbar; */
@@ -21,6 +21,7 @@ article {
     display: flex;
     flex-direction: column;
     gap: var(--gap-medium);
+    align-items: center;
 
     /* scrollbar-gutter: stable; */
 }
@@ -39,19 +40,21 @@ article::-webkit-scrollbar-track {
 
 /* Блок с контентом */
 section {
-    width: 100%;
+    /* width: min(1620px, 100%); */
+
+    /* 5 видео в строку + 4 medium отступа внутри */
+    width: min(calc(270px * 5 + var(--gap-medium) * 4), 100%);
     position: relative;
 
-    /* background-color: var(--bg-secondary);
-    border: 1px solid var(--border-primary);
-    border-radius: var(--border-radius);
-    padding: var(--gap-small); */
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-medium);
 }
 
 
 /* Разделитель */
 hr {
     width: 100%;
-    border: none; /* Отключаем стандартную обводку и ставим обводку 1px */
-    border-bottom: 1px solid var(--border-primary);
+    border: none; /* Отключаем стандартную обводку и ставим обводку 2px */
+    border-bottom: 2px solid var(--border-primary);
 }

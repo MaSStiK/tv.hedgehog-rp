@@ -1,5 +1,4 @@
 import Image from "next/image"
-
 import imgReplaceMe from "@/assets/svg/ReplaceMe.svg"
 import "./ButtonImage.css"
 

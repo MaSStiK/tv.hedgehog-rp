@@ -1,0 +1,49 @@
+/* Сужение блоков с видео */
+
+/* 4 видео в строку + 3 medium отступа внутри */
+@media screen and (max-width: 1475px) {
+    .video-content {
+        width: calc(270px * 4 + var(--gap-medium) * 3);
+    }
+}
+
+/* 3 видео в строку + 2 medium отступа внутри */
+@media screen and (max-width: 1185px) {
+    .video-content {
+        width: calc(270px * 3 + var(--gap-medium) * 2);
+    }
+}
+
+/* Контент в 100% */
+/* 2 видео в строку + 1 medium отступа внутри */
+@media screen and (max-width: 900px) {
+    .video-content {
+        width: calc(270px * 2 + var(--gap-medium));
+    }
+}
+
+/* Мобильная версия */
+@media screen and (max-width: 620px) {
+    .video-content {
+        width: 100%;
+    }
+
+    .video-row {
+        flex-direction: column;
+        gap: var(--gap-small);
+    }
+
+    .video {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .video__thumbnail {
+        width: 200px;
+        height: 116.5px;
+    }
+
+    .video p {
+        width: calc(100% - 200px - var(--gap-small));
+    }
+}

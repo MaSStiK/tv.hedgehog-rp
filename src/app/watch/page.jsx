@@ -10,6 +10,6 @@ export default function WatchEmpty() {
     }, [])
 
     return (
-        <article></article>
+        <></>
     )
 }

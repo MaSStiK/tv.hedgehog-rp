@@ -22,8 +22,7 @@ header {
 }
 
 .header__button {
-    height: var(--button-height-big);
-    width: var(--button-height-big);
+    padding: 0 4px 0 0;
 }
 
 .header__button img {

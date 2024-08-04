@@ -28,6 +28,7 @@
         width: 100%;
     }
 
+    /* Делаем все видео в колонну как на мобильном youtube */
     .video-row {
         flex-direction: column;
         gap: var(--gap-small);
@@ -38,6 +39,7 @@
         flex-direction: row;
     }
 
+    /* Фиксированная высота превью */
     .video__thumbnail {
         width: 200px;
         height: 116.5px;

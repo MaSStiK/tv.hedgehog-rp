@@ -1,3 +1,4 @@
+/* Блок с title и строкой видео */
 .video-content {
     /* 5 видео в строку + 4 medium отступа внутри */
     width: calc(270px * 5 + var(--gap-medium) * 4);
@@ -7,12 +8,14 @@
     margin: 0 auto;
 }
 
+/* Строка с видео */
 .video-row {
     display: flex;
     flex-wrap: wrap;
     gap: var(--gap-medium);
 }
 
+/* Видео и название */
 .video {
     width: 270px;
     display: flex;
@@ -21,6 +24,7 @@
     cursor: pointer;
 }
 
+/* Превью */
 .video__thumbnail {
     width: 100%;
 }
@@ -28,7 +32,6 @@
 .video__thumbnail img {
     width: 100%;
     height: 100%;
-    /* border-radius: var(--border-radius); */
     border-radius: 8px;
 }
 

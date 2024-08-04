@@ -190,42 +190,50 @@ const seasons = {
             {
                 title: "1 сезон 8 серия | Переход к новому миру",
                 thumbnail: imgS1E8,
-                videoID: "s1e8"
+                videoID: "s1e8",
+                src: "https://drive.google.com/file/d/1bOJBjkutV_WNWf4R4cV0q1WUFsMT-ZmS/preview"
             },
             {
                 title: "1 cезон 7 серия | Сложное десятилетие",
                 thumbnail: imgS1E7,
-                videoID: "s1e7"
+                videoID: "s1e7",
+                src: "https://drive.google.com/file/d/1icbQUV_iHX8BkoWeAMrvyynOeSwOUjlK/preview"
             },
             {
                 title: "1 сезон 6 серия | Жизнь после смерти",
                 thumbnail: imgS1E6,
-                videoID: "s1e6"
+                videoID: "s1e6",
+                src: "https://drive.google.com/file/d/1PUfWvyw8eXE7zBA5J8uDoAqZcQwL78KF/preview"
             },
             {
                 title: "1 сезон 5 серия | Продолжение медвежьего конца",
                 thumbnail: imgS1E5,
-                videoID: "s1e5"
+                videoID: "s1e5",
+                src: "https://drive.google.com/file/d/1-rjefdCSoiUnnK6CoCx3jZ8P1Ionmt5w/preview"
             },
             {
                 title: "1 сезон 4 серия | Начало медвежьего конца",
                 thumbnail: imgS1E4,
-                videoID: "s1e4"
+                videoID: "s1e4",
+                src: "https://drive.google.com/file/d/1PXfKD24QIsVrRvLtK3J2i2L-SxVqVW6l/preview"
             },
             {
                 title: "1 сезон 3 серия | Затишье перед бурей",
                 thumbnail: imgS1E3,
-                videoID: "s1e3"
+                videoID: "s1e3",
+                src: "https://drive.google.com/file/d/1t84xQ5R-gvo5LxUMy3ZqWQ-rk_XRMwX_/preview"
             },
             {
                 title: "1 сезон 2 серия | Павшие муравьи",
                 thumbnail: imgS1E2,
-                videoID: "s1e2"
+                videoID: "s1e2",
+                src: "https://drive.google.com/file/d/1aoIlCokdUOIr4wfBA5N3SznaRDb0OPO6/preview"
             },
             {
                 title: "1 сезон 1 серия | iПилот",
                 thumbnail: imgS1E1,
-                videoID: "s1e1"
+                videoID: "s1e1",
+                src: "https://drive.google.com/file/d/1faTcepLwVFnjrcMwk9AHKB_KBzLL8fMd/preview"
             }
         ]
     }

@@ -1,3 +1,5 @@
+import imgS4E7 from "@/assets/thumbnails/S4E7.png"
+import imgS4E6 from "@/assets/thumbnails/S4E6.png"
 import imgS4E5 from "@/assets/thumbnails/S4E5.png"
 import imgS4E4 from "@/assets/thumbnails/S4E4.png"
 import imgS4E3 from "@/assets/thumbnails/S4E3.png"
@@ -36,6 +38,18 @@ const seasons = {
     s4: {
         title: "Сезон 4",
         videos: [
+            {
+                title: "Выйдет 07.08 в 13:00 по МСК",
+                thumbnail: imgS4E7,
+                videoID: "s4e7",
+                src: ""
+            },
+            {
+                title: "Выйдет 05.08 в 13:00 по МСК",
+                thumbnail: imgS4E6,
+                videoID: "s4e6",
+                src: ""
+            },
             {
                 title: "4 сезон 5 серия | Коллапс",
                 thumbnail: imgS4E5,
@@ -129,37 +143,44 @@ const seasons = {
             {
                 title: "2 сезон 7 серия | Полный конец",
                 thumbnail: imgS2E7,
-                videoID: "s2e7"
+                videoID: "s2e7",
+                src: "https://drive.google.com/file/d/1FxHj5FhiF1lxnjLJZsJj8-sSmPfExRiC/preview"
             },
             {
                 title: "2 сезон 6 серия | Конец троевластия - часть вторая",
                 thumbnail: imgS2E6,
-                videoID: "s2e6"
+                videoID: "s2e6",
+                src: "https://drive.google.com/file/d/13NU1iLVQmbn5evR9VDzQVZtBxvuV0InZ/preview"
             },
             {
                 title: "2 сезон 5 серия | Конец троевластия - часть первая",
                 thumbnail: imgS2E5,
-                videoID: "s2e5"
+                videoID: "s2e5",
+                src: "https://drive.google.com/file/d/1zly9j8foWiAkwHAvmw0CHGo2_uG0a1zt/preview"
             },
             {
                 title: "2 сезон 4 серия | И разрушения пошли по планете..",
                 thumbnail: imgS2E4,
-                videoID: "s2e4"
+                videoID: "s2e4",
+                src: "https://drive.google.com/file/d/13jfBtFWlT8lgfOop9BBhoiFsWl6T5lfJ/preview"
             },
             {
                 title: "2 сезон 3 серия | Все сложно",
                 thumbnail: imgS2E3,
-                videoID: "s2e3"
+                videoID: "s2e3",
+                src: "https://drive.google.com/file/d/1-wkJVqNjjHv6bSyEi5z4mG5IDDm_J1mL/preview"
             },
             {
                 title: "2 сезон 2 серия | Неспокойное десятилетие",
                 thumbnail: imgS2E2,
-                videoID: "s2e2"
+                videoID: "s2e2",
+                src: "https://drive.google.com/file/d/1fOWfx8Wezcqwf0u13hgwShihYp1uWnIu/preview"
             },
             {
                 title: "2 сезон 1 серия | Новый мир",
                 thumbnail: imgS2E1,
-                videoID: "s2e1"
+                videoID: "s2e1",
+                src: "https://drive.google.com/file/d/1uzj3_ZdB7g-6g1bY7R-L2sLwelz3xKrT/preview"
             }
         ]
     },

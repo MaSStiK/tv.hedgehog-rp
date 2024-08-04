@@ -1,9 +1,6 @@
 "use client";
-import ReactPlayer from "react-player";
 import { useState, useEffect } from "react";
-import { redirect, useParams } from "next/navigation"
-import Link from 'next/link'
-import Image from "next/image"
+import { useParams } from "next/navigation"
 import VideoRow from "@/components/VideoRow/VideoRow";
 import seasons from "@/components/seasons.js";
 

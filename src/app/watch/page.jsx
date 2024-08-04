@@ -1,6 +1,5 @@
 "use client";
-import ReactPlayer from "react-player";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { redirect } from "next/navigation"
 
 export default function WatchEmpty() {

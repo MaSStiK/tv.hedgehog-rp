@@ -1,6 +1,4 @@
 "use client";
-import ReactPlayer from "react-player";
-import { useState, useEffect } from "react";
 import VideoRow from "@/components/VideoRow/VideoRow";
 import seasons from "@/components/seasons.js";
 

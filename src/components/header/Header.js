@@ -1,5 +1,4 @@
 'use client';
-import Image from "next/image"
 import { useRouter } from 'next/navigation';
 import ButtonImage from "@/components/ButtonImage/ButtonImage"
 import imgLogoTV from "@/assets/logotype-tv.png"

@@ -143,7 +143,7 @@ const seasons = {
                 title: "3 сезон 1 серия | И всё спокойнее становится жить... | 1 - 13 декабря",
                 thumbnail: imgS3E1,
                 videoID: "s3e1",
-                src: "https://drive.google.com/file/d/1pkVzWc46lOo2YAwMAUz9i9Up8yT05bbz/previe"
+                src: "https://drive.google.com/file/d/1pkVzWc46lOo2YAwMAUz9i9Up8yT05bbz/preview"
             }
         ]
     },

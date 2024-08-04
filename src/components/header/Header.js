@@ -17,6 +17,7 @@ export default function Header() {
                     src={imgLogoTV}
                     alt="logo"
                     text="Ежиное Телевидение"
+                    title="Открыть главную страницу"
                     onClick={() => push("/")}
                 />
 
@@ -25,6 +26,7 @@ export default function Header() {
                     src={imgLogo}
                     alt="home"
                     text="Основной сайт"
+                    title="Открыть основной сайт"
                     onClick={() => window.open("https://hedgehog-rp.ru/", "_self")}
                 />
             </div>

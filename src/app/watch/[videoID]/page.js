@@ -2,35 +2,26 @@
 import ReactPlayer from "react-player";
 import { useState, useEffect } from "react";
 import { redirect, useParams } from "next/navigation"
+import seasons from "@/components/videos/seasons";
+
+import style from "./watch.module.css";
 
 export default function Watch() {
-
-    const [domLoaded, setDomLoaded] = useState(false)
+    const [VideoSrc, setVideoSrc] = useState()
+    const params = useParams()
 
     useEffect(() => {
-        setDomLoaded(true)
-    }, []);
+        let videoID = params.videoID // Получаем id из ссылки
+        let videoSeason = videoID.split("e")[0] // Сезон видео
+        let videoIndex = seasons[videoSeason].videos.findIndex(el => el.videoID === videoID)
+        setVideoSrc(seasons[videoSeason].videos[videoIndex].src)
+    }, [params]);
 
-    const params = useParams()
-    console.log(params);
-
-    // let video = `/videos/${params.videoID}.mp4`
-    let video = "https://drive.google.com/file/d/1hnti2vqzvixmZC3W6HdZjBwmP51AikAj/preview"
-    
-    return (
+     return (
         <article>
-            <iframe src="https://drive.google.com/file/d/1hnti2vqzvixmZC3W6HdZjBwmP51AikAj/preview" width="640" height="480" allow="autoplay"></iframe>
-            
-            {domLoaded && <>
-                <div className="video-player">
-                    <ReactPlayer
-                        url={video}
-                        controls={true}
-                        pip={true}
-                    />
-                    <source src={video} type="video/mp4" />
-                </div>
-            </> }
+            <div className={style.playerWrapper}>
+                <iframe className={style.player} src={VideoSrc}></iframe>
+            </div>
         </article>
     )
 }

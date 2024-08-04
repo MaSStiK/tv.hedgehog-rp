@@ -17,39 +17,43 @@ import imgS3E3 from "@/assets/thumbnails/S3E3.jpg"
 import imgS3E2 from "@/assets/thumbnails/S3E2.jpg"
 import imgS3E1 from "@/assets/thumbnails/S3E1.jpg"
 
-const seasons = [
-    {
+const seasons = {
+    s4: {
         title: "Сезон 4",
         videos: [
             {
                 title: "Ежиные Хроники | 4 сезон 5 серия | Коллапс",
                 thumbnail: imgS4E5,
                 videoID: "s4e5",
-                link: "https://drive.google.com/file/d/1hnti2vqzvixmZC3W6HdZjBwmP51AikAj/preview"
+                src: "https://drive.google.com/file/d/1hnti2vqzvixmZC3W6HdZjBwmP51AikAj/preview"
             },
             {
                 title: "Ежиные Хроники | 4 сезон 4 серия | Хиенспатт",
                 thumbnail: imgS4E4,
-                videoID: "s4e4"
+                videoID: "s4e4",
+                src: "https://drive.google.com/file/d/1aSTjPc7-X-vuUiGYgmmyAh20czQdPmOY/preview"
             },
             {
                 title: "Ежиные Хроники | 4 сезон 3 серия | Осваиваемся",
                 thumbnail: imgS4E3,
-                videoID: "s4e3"
+                videoID: "s4e3",
+                src: "https://drive.google.com/file/d/1KU_HjAQEyRZaq2TqWdlYzVdsSi4fboN-/preview"
             },
             {
                 title: "Ежиные Хроники | 4 сезон 2 серия | 2016, Новый Свет и Анастасия",
                 thumbnail: imgS4E2,
-                videoID: "s4e2"
+                videoID: "s4e2",
+                src: "https://drive.google.com/file/d/1Ybk6JZSo2l77SU4WkMBe67dysGnJr2Bi/preview"
             },
             {
                 title: "Ежиные Хроники | 4 сезон 1 серия | Спокойные года",
                 thumbnail: imgS4E1,
-                videoID: "s4e1"
+                videoID: "s4e1",
+                src: "https://drive.google.com/file/d/1tSkwfiZTRGhKBV2UUshHTVQYPMTc_BE4/preview"
             }
         ]
     },
-    {
+    s3: {
         title: "Сезон 3",
         videos: [
             {
@@ -104,6 +108,6 @@ const seasons = [
             }
         ]
     }
-]
+}
 
 export default seasons

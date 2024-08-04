@@ -10,11 +10,11 @@ import style from "@/components/videos/videos.module.css";
 export default function Home() {
     return (
         <>
-            {seasons.map((season, i) => (
+            {Object.keys(seasons).map((season, i) => (
                 <section key={i} className={style.videoSection}>
-                    <h1 className={style.videoSeason}>{season.title}</h1>
+                    <h1 className={style.videoSeason}>{seasons[season].title}</h1>
                     <div className={style.videoRow}>
-                        {season.videos.map((video, i) => (
+                        {seasons[season].videos.map((video, i) => (
                             <Link className={style.video} key={i} href={`/watch/${video.videoID}`}>
                                 <div className={style.videoThumbnail}>
                                     <Image

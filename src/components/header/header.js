@@ -26,7 +26,7 @@ export default function Header() {
                     className="tp"
                     src={imgHome}
                     alt="home"
-                    text="Главная страница"
+                    text="Основной сайт"
                     onClick={() => window.open("https://hedgehog-rp.ru/", "_self")}
                 />
             </div>

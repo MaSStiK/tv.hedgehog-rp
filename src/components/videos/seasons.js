@@ -4,6 +4,8 @@ import imgS4E3 from "@/assets/thumbnails/S4E3.jpg"
 import imgS4E2 from "@/assets/thumbnails/S4E2.jpg"
 import imgS4E1 from "@/assets/thumbnails/S4E1.jpg"
 
+// https://drive.google.com/file/d/1hnti2vqzvixmZC3W6HdZjBwmP51AikAj/view?usp=sharing
+
 import imgS3E10 from "@/assets/thumbnails/S3E10.jpg"
 import imgS3E9 from "@/assets/thumbnails/S3E9 .jpg"
 import imgS3E8 from "@/assets/thumbnails/S3E8.jpg"
@@ -22,7 +24,8 @@ const seasons = [
             {
                 title: "Ежиные Хроники | 4 сезон 5 серия | Коллапс",
                 thumbnail: imgS4E5,
-                videoID: "s4e5"
+                videoID: "s4e5",
+                link: "https://drive.google.com/file/d/1hnti2vqzvixmZC3W6HdZjBwmP51AikAj/preview"
             },
             {
                 title: "Ежиные Хроники | 4 сезон 4 серия | Хиенспатт",

@@ -1,3 +1,4 @@
+import imgS4E8 from "@/assets/thumbnails/S4E8.png"
 import imgS4E7 from "@/assets/thumbnails/S4E7.png"
 import imgS4E6 from "@/assets/thumbnails/S4E6.png"
 import imgS4E5 from "@/assets/thumbnails/S4E5.png"
@@ -38,8 +39,23 @@ const seasons = {
     s4: {
         title: "Сезон 4",
         videos: [
+            // {
+            //     title: "Выйдет 12.08 в 15:00 по МСК",
+            //     // title: "4 сезон 9 серия | Название не придумано",
+            //     thumbnail: imgS4E9,
+            //     videoID: "s4e9",
+            //     src: ""
+            // },
             {
-                title: "Выйдет 07.08 в 13:00 по МСК",
+                title: "Выйдет 09.08 в 15:00 по МСК",
+                // title: "4 сезон 8 серия | Суета",
+                thumbnail: imgS4E8,
+                videoID: "s4e8",
+                src: ""
+            },
+            {
+                title: "Выйдет 07.08 в 15:00 по МСК",
+                // title: "4 сезон 7 серия | Название не придумано",
                 thumbnail: imgS4E7,
                 videoID: "s4e7",
                 src: ""

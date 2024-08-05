@@ -45,10 +45,10 @@ const seasons = {
                 src: ""
             },
             {
-                title: "Выйдет 05.08 в 13:00 по МСК",
+                title: "4 сезон 6 серия | Лефанляндский вопрос",
                 thumbnail: imgS4E6,
                 videoID: "s4e6",
-                src: ""
+                src: "https://drive.google.com/file/d/1QZqfQENrVqQPA23sdJH0nB6b6Kepafwm/preview"
             },
             {
                 title: "4 сезон 5 серия | Коллапс",

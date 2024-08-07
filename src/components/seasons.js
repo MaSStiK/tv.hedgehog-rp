@@ -54,11 +54,10 @@ const seasons = {
                 src: ""
             },
             {
-                title: "Выйдет 07.08 в 15:00 по МСК",
-                // title: "4 сезон 7 серия | Название не придумано",
+                title: "4 сезон 7 серия | Напряжение у западных морей",
                 thumbnail: imgS4E7,
                 videoID: "s4e7",
-                src: ""
+                src: "https://drive.google.com/file/d/1WaNMI1V_O7-MTPdxbAe9UiUk2JxpT-0g/view?usp=sharing"
             },
             {
                 title: "4 сезон 6 серия | Лефанляндский вопрос",

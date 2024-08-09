@@ -47,11 +47,11 @@ const seasons = {
             //     src: ""
             // },
             {
-                title: "Выйдет 09.08 в 15:00 по МСК",
-                // title: "4 сезон 8 серия | Суета",
+                // title: "Выйдет 09.08 в 15:00 по МСК",
+                title: "4 сезон 8 серия | Суета",
                 thumbnail: imgS4E8,
                 videoID: "s4e8",
-                src: ""
+                src: "https://drive.google.com/file/d/10Gw7CB63kcwdVSOCBgmmFHvFTh_M5vzO/preview"
             },
             {
                 title: "4 сезон 7 серия | Напряжение у западных морей",

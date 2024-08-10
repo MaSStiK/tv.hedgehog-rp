@@ -28,7 +28,7 @@ article {
 
 /* Добавляем scrollbar отступ снизу */
 article::-webkit-scrollbar-track {
-    margin-top: calc(50px + var(--gap-small));
+    margin-top: 51px;
 }
 
 /* CSS for other than iOS devices */ 

@@ -18,8 +18,6 @@ export default function VideoRow({
                             <Image
                                 src={video.thumbnail}
                                 alt="thumbnail"
-                                // width={0}
-                                // height={0}
                             />
                             
                         </div>

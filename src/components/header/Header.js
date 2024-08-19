@@ -1,4 +1,5 @@
 'use client';
+import Link from "next/link"
 import { useRouter } from 'next/navigation';
 import ButtonImage from "@/components/ButtonImage/ButtonImage"
 import imgLogoTV from "@/assets/logotype-tv.png"
@@ -12,23 +13,27 @@ export default function Header() {
     return (
         <header>
             <div className="header__content">
-                <ButtonImage
-                    className="tp header__button"
-                    src={imgLogoTV}
-                    alt="logo"
-                    text="Ежиное Телевидение"
-                    title="Открыть главную страницу"
-                    onClick={() => push("/")}
-                />
-
-                <ButtonImage
-                    className="tp header__button"
-                    src={imgLogo}
-                    alt="home"
-                    text="Основной сайт"
-                    title="Открыть основной сайт"
-                    onClick={() => window.open("https://hedgehog-rp.ru/", "_self")}
-                />
+                <Link href="/">
+                    <ButtonImage
+                        className="tp header__button"
+                        src={imgLogoTV}
+                        alt="logo"
+                        text="Ежиное Телевидение"
+                        title="Открыть главную страницу"
+                        onClick={() => push("/")}
+                    />
+                </Link>
+            
+                <Link href="https://hedgehog-rp.ru/">
+                    <ButtonImage
+                        className="tp header__button"
+                        src={imgLogo}
+                        alt="home"
+                        text="Основной сайт"
+                        title="Открыть основной сайт"
+                        onClick={() => window.open("https://hedgehog-rp.ru/", "_self")}
+                    />
+                </Link>
             </div>
         </header>
     )

@@ -21,7 +21,15 @@
     display: flex;
     flex-direction: column;
     gap: var(--gap-small);
+    border-radius: 8px;
+    position: relative;
     cursor: pointer;
+}
+
+/* Подсветка текущей серии */
+.video_highlight {
+    background-color: #2b2a31;
+    outline: 8px solid #2b2a31;
 }
 
 /* Превью */

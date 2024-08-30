@@ -1,39 +1,41 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation"
-import VideoRow from "@/components/VideoRow/VideoRow";
+import VideoList from "@/components/VideoList/VideoList";
 import seasons from "@/components/seasons.js";
 
 import "./watch.css";
 
 export default function Watch() {
-    const [VideoSrc, setVideoSrc] = useState()
-    const [VideoTitle, setVideoTitle] = useState("")
-    const [VideoSeason, setVideoSeason] = useState("")
+    const [Video, setVideo] = useState({})
     const params = useParams()
 
     useEffect(() => {
         let videoID = params.videoID // Получаем id из ссылки
         let videoSeason = videoID.split("e")[0] // Сезон видео
         let videoIndex = seasons[videoSeason].videos.findIndex(el => el.videoID === videoID)
-        setVideoSrc(seasons[videoSeason].videos[videoIndex].src)
-        setVideoTitle(seasons[videoSeason].videos[videoIndex].title)
-        setVideoSeason(videoSeason)
+        setVideo({
+            id: videoID,
+            src: seasons[videoSeason].videos[videoIndex].src,
+            title: seasons[videoSeason].videos[videoIndex].title,
+            season: videoSeason
+        })
     }, [params]);
 
      return (<>
         <div className="player-wrapper">
-            <iframe className="player" src={VideoSrc} allow="autoplay" allowFullScreen></iframe>
-            <h3>{VideoTitle}</h3>
+            <iframe className="player" src={Video.src} allow="autoplay" allowFullScreen></iframe>
+            <h3>{Video.title}</h3>
         </div>
 
         <hr/>
 
-        {VideoSeason &&
+        {Video.season &&
             <section>
-                <VideoRow
-                    title={`Другие серии ${VideoSeason.slice(1)} сезона`}
-                    videos={seasons[VideoSeason].videos}
+                <VideoList
+                    title={`Другие серии ${Video.season.slice(1)} сезона`}
+                    videos={seasons[Video.season].videos}
+                    highlight={Video.id}
                 />
             </section>
         }

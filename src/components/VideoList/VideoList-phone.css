@@ -39,6 +39,12 @@
         flex-direction: row;
     }
 
+    /* Подсветка текущей серии */
+    .video_highlight {
+        background-color: #2b2a31;
+        outline: 6px solid #2b2a31;
+    }
+
     /* Фиксированная высота превью */
     .video__thumbnail {
         width: 200px;

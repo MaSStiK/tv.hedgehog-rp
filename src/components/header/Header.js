@@ -5,7 +5,7 @@ import ButtonImage from "@/components/ButtonImage/ButtonImage"
 import imgLogoTV from "@/assets/logotype-tv.png"
 import imgLogo from "@/assets/logotype.png"
 
-import "./header.css"
+import "./Header.css"
 
 export default function Header() {
     const { push } = useRouter();

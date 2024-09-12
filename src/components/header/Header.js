@@ -6,6 +6,7 @@ import imgLogoTV from "@/assets/logotype-tv.png"
 import imgLogo from "@/assets/logotype.png"
 
 import "./Header.css"
+import "./Header-phone.css"
 
 export default function Header() {
     const { push } = useRouter();

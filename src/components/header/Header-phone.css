@@ -1,0 +1,6 @@
+/* Контент в 100% */
+@media screen and (max-width: 900px) {
+    .header__button p {
+        text-align: left;
+    }
+}

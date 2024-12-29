@@ -29,7 +29,7 @@ export default function VideoList({
                                     <p className="text-gray">{video.views}</p>
                                     <p className="text-gray">{ToDate(video.timestamp).dateWithMonth}</p>
                                   </>
-                                : <p>Серия станет доступна {ToDate(video.timestamp).stringDate} в {ToDate(video.timestamp).stringTime} по МСК</p>
+                                : <p>Серия станет доступной {ToDate(video.timestamp).stringDate} в {ToDate(video.timestamp).stringTime} по МСК</p>
                             }
                         </div>
                     </Link>

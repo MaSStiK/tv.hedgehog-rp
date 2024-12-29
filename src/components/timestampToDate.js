@@ -1,16 +1,21 @@
 // Преобразовать timestamp в дату
 export default function timestampToDate(timestamp = 0) {
     // Если приходит timestamp = undefined - становиться 0
+
+    // Конвертируем в timestamp если получили дату
+    if (typeof timestamp === "string") timestamp = convertToTimestamp(timestamp)
+
     let date = new Date(timestamp)
 
     // Привязка с мск
     let localeDate = date.toLocaleString("ru-RU", { timeZone: "Europe/Moscow" })
-    console.log("localeDate", localeDate);
     
     const [fullDate, fullTime] = localeDate.split(', ');
     const [day, month, year] = fullDate.split(".")
     const [hours, minutes, seconds] = fullTime.split(":")
 
+    console.log(fullDate, fullTime);
+    
     const MONTHS = {
         "01": "янв",
         "02": "фев",
@@ -51,4 +56,10 @@ export default function timestampToDate(timestamp = 0) {
         dateWithFullMonth: `${day} ${FULL_MONTHS[month]} ${year}`,
         passNow: timestamp < nowDate.getTime()
     }
+}
+
+// Конвертация даты формата yyyy-mm-ddThh:mm:ssZ в timestamp
+function convertToTimestamp(dateTimeString) {
+    const date = new Date(dateTimeString);
+    return date.getTime();
 }

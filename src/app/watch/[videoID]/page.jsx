@@ -19,7 +19,7 @@ export default function Watch() {
             id: videoID,
             src: seasons[videoSeason].videos[videoIndex].src,
             title: seasons[videoSeason].videos[videoIndex].title,
-            timestamp: seasons[videoSeason].videos[videoIndex].timestamp,
+            publishedAt: seasons[videoSeason].videos[videoIndex].publishedAt,
             views: seasons[videoSeason].videos[videoIndex].views,
             season: videoSeason
         })
@@ -27,16 +27,16 @@ export default function Watch() {
 
      return (<>
         <div className="player-wrapper">
-            <iframe className="player" src={ToDate(Video.timestamp).passNow ? Video.src : ""} allow="autoplay" allowFullScreen></iframe>
+            <iframe className="player" src={ToDate(Video.publishedAt).passNow ? Video.src : ""} allow="autoplay" allowFullScreen></iframe>
             {Object.keys(Video).length !== 0 &&
                 <div className="player__info">
-                    {ToDate(Video.timestamp).passNow
+                    {ToDate(Video.publishedAt).passNow
                         ? <>
                             <h3>{Video.title}</h3>
                             <p className="text-gray">{Video.views}</p>
-                            <p className="text-gray">{ToDate(Video.timestamp).dateWithMonth}</p>
+                            <p className="text-gray">{ToDate(Video.publishedAt).dateWithMonth}</p>
                           </>
-                        : <h3>Серия станет доступной {ToDate(Video.timestamp).dateWithMonth} в {ToDate(Video.timestamp).stringTime} по МСК</h3>
+                        : <h3>Серия станет доступной {ToDate(Video.publishedAt).dateWithMonth} в {ToDate(Video.publishedAt).stringTime} по МСК</h3>
                     }
                 </div>
             }

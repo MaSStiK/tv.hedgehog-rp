@@ -23,13 +23,13 @@ export default function VideoList({
                             />
                         </div>
                         <div className="video__info">
-                            {ToDate(video.timestamp).passNow
+                            {ToDate(video.publishedAt).passNow
                                 ? <>
                                     <p>{video.title}</p>
                                     <p className="text-gray">{video.views}</p>
-                                    <p className="text-gray">{ToDate(video.timestamp).dateWithMonth}</p>
+                                    <p className="text-gray">{ToDate(video.publishedAt).dateWithMonth}</p>
                                   </>
-                                : <p>Серия станет доступной {ToDate(video.timestamp).dateWithMonth} в {ToDate(video.timestamp).stringTime} по МСК</p>
+                                : <p>Серия станет доступной {ToDate(video.publishedAt).dateWithMonth} в {ToDate(video.publishedAt).stringTime} по МСК</p>
                             }
                         </div>
                     </Link>

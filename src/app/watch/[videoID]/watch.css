@@ -13,3 +13,9 @@
     border: 1px solid var(--border-primary);
     outline: none;
 }
+
+.player__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-tiny);
+}

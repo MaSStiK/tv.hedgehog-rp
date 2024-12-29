@@ -16,6 +16,7 @@
     --border-radius: 4px;
 
     /* Отступы между и внутри блоков */
+    --gap-tiny: 4px;
     --gap-small: 12px;
     --gap-medium: 20px;
 

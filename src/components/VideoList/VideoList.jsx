@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import ToDate from "@/components/timestampToDate"
 
 import "./VideoList.css"
 import "./VideoList-phone.css"
@@ -21,7 +22,16 @@ export default function VideoList({
                                 alt="thumbnail"
                             />
                         </div>
-                        <p>{video.title}</p>
+                        <div className="video__info">
+                            {ToDate(video.timestamp).passNow
+                                ? <>
+                                    <p>{video.title}</p>
+                                    <p className="text-gray">{video.views}</p>
+                                    <p className="text-gray">{ToDate(video.timestamp).dateWithMonth}</p>
+                                  </>
+                                : <p>Серия станет доступна {ToDate(video.timestamp).stringDate} в {ToDate(video.timestamp).stringTime} по МСК</p>
+                            }
+                        </div>
                     </Link>
                 ))}
             </div>

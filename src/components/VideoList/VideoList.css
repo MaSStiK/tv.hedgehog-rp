@@ -20,7 +20,7 @@
     width: 270px;
     display: flex;
     flex-direction: column;
-    gap: var(--gap-small);
+    gap: var(--gap-tiny);
     border-radius: 8px;
     position: relative;
     cursor: pointer;
@@ -56,4 +56,10 @@
     .video:active .video__thumbnail {
         scale: 1.03;
     }
+}
+
+.video__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-tiny);
 }

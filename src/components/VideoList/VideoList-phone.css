@@ -36,6 +36,7 @@
 
     .video {
         width: 100%;
+        gap: var(--gap-small);
         flex-direction: row;
     }
 
@@ -51,7 +52,7 @@
         height: 116.5px;
     }
 
-    .video p {
+    .video__info {
         width: calc(100% - 200px - var(--gap-small));
     }
 }

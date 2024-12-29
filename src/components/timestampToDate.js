@@ -1,8 +1,13 @@
 // Преобразовать timestamp в дату
-export default function timestampToDate(timestamp) {
+export default function timestampToDate(timestamp = 0) {
+    // Если приходит timestamp = undefined - становиться 0
     let date = new Date(timestamp)
-    let test = date.toLocaleString("ru-RU", { timeZone: "Europe/Moscow" })
-    const [fullDate, fullTime] = test.split(', ');
+
+    // Привязка с мск
+    let localeDate = date.toLocaleString("ru-RU", { timeZone: "Europe/Moscow" })
+    console.log("localeDate", localeDate);
+    
+    const [fullDate, fullTime] = localeDate.split(', ');
     const [day, month, year] = fullDate.split(".")
     const [hours, minutes, seconds] = fullTime.split(":")
 

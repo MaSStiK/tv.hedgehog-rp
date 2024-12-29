@@ -35,30 +35,27 @@ const seasons = {
                 views: "0 просмотров"
             },
             {
-                // title: "Выйдет 30.12 в 16:00 по МСК",
                 title: "4 сезон 10 серия | Личностные истории",
                 thumbnail: require("@/assets/thumbnails/S4E10.png"),
                 videoID: "s4e10",
                 src: "https://drive.google.com/file/d/1XPebPrX5k0jfor_5l6YGFUfcqa9Hh4o2/preview",
-                timestamp: 1735570800000,
+                timestamp: 1735570800000, // Выйдет 30.12 в 16:00 по МСК
                 views: "215 просмотров"
             },
             {
-                // title: "Выйдет 30.12 в 13:00 по МСК",
                 title: "4 сезон 9 серия | Испанский, Греческий, Ежиный",
                 thumbnail: require("@/assets/thumbnails/S4E9.png"),
                 videoID: "s4e9",
                 src: "https://drive.google.com/file/d/1CbAFv40iiMReXmdqQeZGLFJwVxkHjzJj/preview",
-                timestamp: 1735560000000,
+                timestamp: 1735560000000, // Выйдет 30.12 в 13:00 по МСК
                 views: "302 просмотров"
             },
             {
-                // title: "Выйдет 09.08 в 15:00 по МСК",
                 title: "4 сезон 8 серия | Суета",
                 thumbnail: require("@/assets/thumbnails/S4E8.png"),
                 videoID: "s4e8",
                 src: "https://drive.google.com/file/d/10Gw7CB63kcwdVSOCBgmmFHvFTh_M5vzO/preview",
-                timestamp: 1723201200000,
+                timestamp: 1723201200000, // Выйдет 09.08 в 15:00 по МСК
                 views: "292 тыс. просмотров"
             },
             {

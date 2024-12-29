@@ -36,7 +36,7 @@ export default function Watch() {
                             <p className="text-gray">{Video.views}</p>
                             <p className="text-gray">{ToDate(Video.timestamp).dateWithMonth}</p>
                           </>
-                        : <h3>Серия станет доступной {ToDate(Video.timestamp).stringDate} в {ToDate(Video.timestamp).stringTime} по МСК</h3>
+                        : <h3>Серия станет доступной {ToDate(Video.timestamp).dateWithMonth} в {ToDate(Video.timestamp).stringTime} по МСК</h3>
                     }
                 </div>
             }

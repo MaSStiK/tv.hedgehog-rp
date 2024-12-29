@@ -15,7 +15,7 @@ const seasons = {
                 thumbnail: require("@/assets/thumbnails/coming_soon.png"),
                 videoID: "s4e13",
                 src: "",
-                timestamp: 1735660800000, // Выйдет 31.12 в 17:00 по МСК
+                timestamp: 1735653600000, // Выйдет 31.12 в 17:00 по МСК
                 views: "0 просмотров"
             },
             {
@@ -23,7 +23,7 @@ const seasons = {
                 thumbnail: require("@/assets/thumbnails/coming_soon.png"),
                 videoID: "s4e12",
                 src: "",
-                timestamp: 1735653600000, // Выйдет 31.12 в 15:00 по МСК
+                timestamp: 1735646400000, // Выйдет 31.12 в 15:00 по МСК
                 views: "0 просмотров"
             },
             {
@@ -31,7 +31,7 @@ const seasons = {
                 thumbnail: require("@/assets/thumbnails/coming_soon.png"),
                 videoID: "s4e11",
                 src: "",
-                timestamp: 1735642800000, // Выйдет 31.12 в 12:00 по МСК
+                timestamp: 1735635600000, // Выйдет 31.12 в 12:00 по МСК
                 views: "0 просмотров"
             },
             {
@@ -39,7 +39,7 @@ const seasons = {
                 thumbnail: require("@/assets/thumbnails/S4E10.png"),
                 videoID: "s4e10",
                 src: "https://drive.google.com/file/d/1XPebPrX5k0jfor_5l6YGFUfcqa9Hh4o2/preview",
-                timestamp: 1735570800000, // Выйдет 30.12 в 16:00 по МСК
+                timestamp: 1735563600000, // Выйдет 30.12 в 16:00 по МСК
                 views: "215 просмотров"
             },
             {
@@ -47,7 +47,7 @@ const seasons = {
                 thumbnail: require("@/assets/thumbnails/S4E9.png"),
                 videoID: "s4e9",
                 src: "https://drive.google.com/file/d/1CbAFv40iiMReXmdqQeZGLFJwVxkHjzJj/preview",
-                timestamp: 1735560000000, // Выйдет 30.12 в 13:00 по МСК
+                timestamp: 1735552800000, // Выйдет 30.12 в 13:00 по МСК
                 views: "302 просмотров"
             },
             {

@@ -1,15 +1,10 @@
 // Преобразовать timestamp в дату
 export default function timestampToDate(timestamp) {
     let date = new Date(timestamp)
-    let hours = date.getHours().toString()
-    let minutes = date.getMinutes().toString()
-    let day = date.getDate().toString()
-    let month = (date.getMonth() + 1).toString() // Добавляем 1 т.к. месяц начинается с нуля
-    let year = date.getFullYear()
-    minutes = minutes.length !== 2 ? "0" + minutes : minutes // Формат минут 00
-    hours = hours.length !== 2 ? "0" + hours : hours // Формат часов 00
-    day = day.length !== 2 ? "0" + day : day // Формат дня 00
-    month = month.length !== 2 ? "0" + month : month // Формат месяца 00
+    let test = date.toLocaleString("ru-RU", { timeZone: "Europe/Moscow" })
+    const [fullDate, fullTime] = test.split(', ');
+    const [day, month, year] = fullDate.split(".")
+    const [hours, minutes, seconds] = fullTime.split(":")
 
     const MONTHS = {
         "01": "янв",
@@ -39,19 +34,14 @@ export default function timestampToDate(timestamp) {
         "10": "октября",
         "11": "ноября",
         "12": "декабря",
-    }    
+    }
 
     let nowDate = new Date()
     let nowYear = nowDate.getFullYear()
 
     return {
-        hours: hours,
-        minutes: minutes,
-        day: day,
-        month: month,
-        year: year,
         stringTime: `${hours}:${minutes}`,
-        stringDate: `${day}.${month}.${year}`,
+        stringDate: fullDate,
         dateWithMonth: `${day} ${MONTHS[month]} ${year}`,
         dateWithFullMonth: `${day} ${FULL_MONTHS[month]} ${year}`,
         passNow: timestamp < nowDate.getTime()

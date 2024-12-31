@@ -15,7 +15,7 @@ const seasons = {
                 thumbnail: require("@/assets/thumbnails/coming_soon.png"),
                 videoID: "s4e13",
                 src: "",
-                publishedAt: "2025-01-01T14:00:00Z", // Выйдет 01.01 в 17:00 по МСК
+                publishedAt: "2025-01-01T12:00:00Z", // Выйдет 01.01 в 15:00 по МСК
                 views: "0 просмотров"
             },
             {

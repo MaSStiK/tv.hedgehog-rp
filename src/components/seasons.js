@@ -11,12 +11,12 @@ const seasons = {
             //     views: "0 просмотров"
             // },
             {
-                title: "4 сезон 13 серия | Название не указано",
-                thumbnail: require("@/assets/thumbnails/coming_soon.png"),
+                title: "4 сезон 13 серия | Разгрузка",
+                thumbnail: require("@/assets/thumbnails/S4E13.png"),
                 videoID: "s4e13",
-                src: "",
+                src: "https://drive.google.com/file/d/1PQrUGELNFD1q5kKwNfIgMJpelWqaNmOu/preview",
                 publishedAt: "2025-01-01T12:00:00Z", // Выйдет 01.01 в 15:00 по МСК
-                views: "0 просмотров"
+                views: "16 тыс. просмотров"
             },
             {
                 title: "4 сезон 12 серия | Новогодние истории",
@@ -24,7 +24,7 @@ const seasons = {
                 videoID: "s4e12",
                 src: "https://drive.google.com/file/d/1VoiwYdJruePTW0zcgFwupTvwNmhouTLy/preview",
                 publishedAt: "2024-12-31T12:00:00Z", // Выйдет 31.12 в 15:00 по МСК
-                views: "46 тыс. просмотров"
+                views: "138 тыс. просмотров"
             },
             {
                 title: "4 сезон 11 серия | Тяжелые десятилетия",
@@ -32,7 +32,7 @@ const seasons = {
                 videoID: "s4e11",
                 src: "https://drive.google.com/file/d/1B0ZVoUFs8XJX9k0qLrEWzt_TlIE5MvuE/preview",
                 publishedAt: "2024-12-31T09:00:00Z", // Выйдет 31.12 в 12:00 по МСК
-                views: "97 тыс. просмотров"
+                views: "185 тыс. просмотров"
             },
             {
                 title: "4 сезон 10 серия | Личностные истории",
@@ -40,7 +40,7 @@ const seasons = {
                 videoID: "s4e10",
                 src: "https://drive.google.com/file/d/1XPebPrX5k0jfor_5l6YGFUfcqa9Hh4o2/preview",
                 publishedAt: "2024-12-30T13:00:00Z", // Выйдет 30.12 в 16:00 по МСК
-                views: "100 тыс. просмотров"
+                views: "206 тыс. просмотров"
             },
             {
                 title: "4 сезон 9 серия | Испанский, Греческий, Ежиный",
@@ -48,7 +48,7 @@ const seasons = {
                 videoID: "s4e9",
                 src: "https://drive.google.com/file/d/1CbAFv40iiMReXmdqQeZGLFJwVxkHjzJj/preview",
                 publishedAt: "2024-12-30T10:00:00Z", // Выйдет 30.12 в 13:00 по МСК
-                views: "6 тыс. просмотров"
+                views: "211 тыс. просмотров"
             },
             {
                 title: "4 сезон 8 серия | Суета",

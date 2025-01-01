@@ -131,7 +131,7 @@ const seasons = {
                 title: "3 сезон 9 серия | Всё точно приходит в норму",
                 thumbnail: require("@/assets/thumbnails/S3E9.png"),
                 videoID: "s3e9",
-                src: "https://drive.google.com/file/d/1_zcF1DYcVnvVolDkQ5ovwgMxCZXKVL0n/preview",
+                src: "https://drive.google.com/file/d/12fa5Ww79sWNFTWdQEeHJ3ReeSF4RXf6K/preview",
                 publishedAt: "2022-12-31T09:00:34Z",
                 views: "683 тыс. просмотров"
             },

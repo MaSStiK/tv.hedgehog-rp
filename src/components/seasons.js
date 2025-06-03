@@ -1,15 +1,26 @@
+// Превью "@/assets/thumbnails/coming_soon.png" используется когда Данечка еще не сделал превью
+// В остальных случая можно указать всю информацию о серии, доступна она будет только после того как наступит дата publishedAt
+
 const seasons = {
     s4: {
         title: "Сезон 4",
         videos: [
             // {
-            //     title: "4 сезон 14 серия | Название не указано",
-            //     thumbnail: require("@/assets/thumbnails/S4E8.png"),
-            //     videoID: "s4e14",
+            //     title: "4 сезон 15 серия | Название не указано",
+            //     thumbnail: require("@/assets/thumbnails/S4E15.png"),
+            //     videoID: "s4e15",
             //     src: "",
-            //     publishedAt: 0, // Выйдет 30.12 в 16:00 по МСК
+            //     publishedAt: "2025-06-04T10:00:00Z", // Выйдет 04.06 в 13:00 по МСК
             //     views: "0 просмотров"
             // },
+            {
+                title: "4 сезон 14 серия | Предвоенный синдром",
+                thumbnail: require("@/assets/thumbnails/S4E14.png"),
+                videoID: "s4e14",
+                src: "https://drive.google.com/file/d/1496imPXJt1f2BaKOzIQ4GtxlTHjgjA6N/preview",
+                publishedAt: "2025-06-04T10:00:00Z", // Выйдет 04.06 в 13:00 по МСК
+                views: "2 тыс. просмотров"
+            },
             {
                 title: "4 сезон 13 серия | Разгрузка",
                 thumbnail: require("@/assets/thumbnails/S4E13.png"),

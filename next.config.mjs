@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    distDir: 'build' // Папка сборки
-};
+const nextConfig = {};
 
 export default nextConfig;

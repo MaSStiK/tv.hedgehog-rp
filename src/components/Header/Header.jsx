@@ -20,6 +20,8 @@ export default function Header() {
                 <h1>Ежиное Телевидение</h1>
             </Link>
 
+            {/* todo: Сделать поиск */}
+            {/* Поиск будет вести на отдельную страницу и текст поиска будет переносится туда */}
             {/* <div className="input-wrapper">
                 <input type="text" placeholder="Поиск по серим" maxLength={100} />
                 <ButtonImage
@@ -27,10 +29,8 @@ export default function Header() {
                     alt="Поиск"
                     title="Поиск"
                     className="tp"
-                /> */}
-                {/* todo: Сделать поиск */}
-                {/* Поиск будет вести на отдельную страницу и текст поиска будет переносится туда */}
-            {/* </div> */}
+                />
+            </div> */}
         </header>
     )
 }

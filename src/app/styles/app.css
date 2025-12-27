@@ -1,8 +1,8 @@
 html, body {
     width: 100%;
     height: auto;
+    overflow-y: auto;
     scrollbar-gutter: stable;
-    
 }
 
 body {

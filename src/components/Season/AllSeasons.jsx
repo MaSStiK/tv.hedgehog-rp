@@ -3,7 +3,7 @@ import { seasons } from "@/lib/series"
 
 export default function AllSeasons() {
     const entries = Object.entries(seasons).sort(
-        ([a], [b]) => Number(b.slice(1)) - Number(a.slice(1)) // сортировка по убыванию
+        ([a], [b]) => Number(b.slice(1)) - Number(a.slice(1)) // Сортировка по убыванию
     )
 
     return (
@@ -12,7 +12,7 @@ export default function AllSeasons() {
                 <section key={seasonKey}>
                     <Season
                         title={season.title}
-                        season={season.episodes}
+                        episodes={season.episodes}
                     />
 
                     {i !== entries.length - 1 && <hr/>}

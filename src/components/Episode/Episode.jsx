@@ -22,7 +22,7 @@ export default function Episode({ episode, highlightId="" }) {
     const thumbnailSrc = date.isReleased ? episode.thumbnail : "/thumbnails/coming_soon.png"
     
     return (
-        <Link className={episodeClass} href={episodeLink}>
+        <Link className={episodeClass} href={episodeLink} scroll={false}>
             <div className="episode__thumbnail">
                 <Image
                     src={thumbnailSrc}

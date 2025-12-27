@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import clsx from "clsx"
 import { getEpisode } from "@/lib/series"
@@ -7,8 +7,16 @@ import isoToDate from "@/lib/utils/isoToDate"
 
 import "./Player.css"
 
+// Просмотр выбранного эпизода
 export default function Player({ videoID }) {
     const [iframeLoaded, setIframeLoaded] = useState(false)
+    
+    // Прокрутка страницы наверх при переключении видео
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" })
+        setIframeLoaded(false)
+    }, [videoID])
+
     const episode = getEpisode(videoID) // Получаем сам эпизод
 
     // Преобразуем ISO в объект с данными о дате

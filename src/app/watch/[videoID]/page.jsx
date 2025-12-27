@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
     }
 }
 
-// Страница с просмотром серии
+// Страница с просмотром эпизода
 export default function Watch({ params }) {
     const { videoID } = params
     const episode = getEpisode(videoID)

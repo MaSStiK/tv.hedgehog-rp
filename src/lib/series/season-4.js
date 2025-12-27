@@ -15,7 +15,7 @@ const season4 = [
         title: "4 сезон 14 серия | Предвоенный синдром",
         thumbnail: "/thumbnails/S4E14.png",
         src: "https://drive.google.com/file/d/1496imPXJt1f2BaKOzIQ4GtxlTHjgjA6N/preview",
-        publishedAt: "2026-06-04T10:00:00Z", // Выйдет 04.06 в 13:00 по МСК
+        publishedAt: "2025-06-04T10:00:00Z", // Выйдет 04.06 в 13:00 по МСК
         views: "2 тыс. просмотров"
     },
     {

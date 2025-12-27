@@ -1,0 +1,29 @@
+/* Сужение блоков с видео */
+
+/* 4 видео в строку + 3 medium отступа внутри */
+@media (max-width: 1475px) {
+    .season {
+        width: calc(var(--episode-width) * 4 + var(--gap-medium) * 3);
+    }
+}
+
+/* 3 видео в строку + 2 medium отступа внутри */
+@media (max-width: 1185px) {
+    .season {
+        width: calc(var(--episode-width) * 3 + var(--gap-medium) * 2);
+    }
+}
+
+/* Контент в 100% */
+/* Мобильная версия */
+@media (max-width: 900px) {
+    .season {
+        width: 100%;
+    }
+
+    /* Делаем все эпизоды в колонну как на мобильном youtube */
+    .episode-list {
+        flex-direction: column;
+        gap: var(--gap-small);
+    }
+}

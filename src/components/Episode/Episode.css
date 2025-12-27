@@ -1,0 +1,74 @@
+:root {
+    --episode-width: 270px;
+    --episode-hover-bg: #2b2a31AA;
+    --episode-highlight-bg: #2b2a31;
+}
+
+/* Блок с видео: Превью и информация о видео */
+.episode {
+    width: var(--episode-width);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-tiny);
+    border-radius: 8px;
+    outline: 8px solid transparent;
+
+    position: relative;
+    cursor: pointer;
+}
+
+/* Наведение на пк */
+@media (hover: hover) {
+	.episode:not(.episode_highlight):is(:hover, :focus-visible) {
+        background-color: var(--episode-hover-bg);
+        outline: 8px solid var(--episode-hover-bg);
+    }
+}
+
+/* Клик на телефоне */
+@media (hover: none) {
+	.episode:not(.episode_highlight):active {
+        background-color: var(--episode-hover-bg);
+        outline: 8px solid var(--episode-hover-bg);
+    }
+}
+
+/* Подсветка выбранной серии по videoID */
+.episode_highlight {
+    background-color: var(--episode-highlight-bg);
+    outline: 8px solid var(--episode-highlight-bg);
+}
+
+/* Превью */
+.episode__thumbnail {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.episode__thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+/* Наведение на видео пк */
+@media (hover: hover) {
+    .episode:is(:hover, :focus-visible) .episode__thumbnail {
+        scale: 1.03;
+    }
+}
+
+/* Клик на видео телефоне */
+@media (hover: none) {
+    .episode:active .episode__thumbnail {
+        scale: 1.03;
+    }
+}
+
+/* Информация об эпизоде под превью */
+.episode__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-tiny);
+}

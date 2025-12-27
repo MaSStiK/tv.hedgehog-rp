@@ -4,36 +4,35 @@ html, body {
 }
 
 body {
-    /* display: flex;
-    justify-content: center; */
     background-color: var(--bg-primary);
 }
 
 /* Блок страницы */
-article {
+main {
     width: 100%;
     height: 100%; /* Высота во всю страницу */
-    padding: calc(50px + var(--gap-medium)) var(--gap-medium) var(--gap-medium) var(--gap-medium);
-    overflow-y: auto; /* scroll обычный */
+    padding: var(--gap-medium);
+    padding-top: calc(var(--header-height) + var(--gap-medium));
+
+    /* Отображаем вертикальный скролл */
+    overflow-y: auto;
     overflow-x: hidden;
-    /* -ms-overflow-style: -ms-autohiding-scrollbar; */
+    scrollbar-gutter: stable;
 
     display: flex;
     flex-direction: column;
     gap: var(--gap-medium);
     align-items: center;
-
-    /* scrollbar-gutter: stable; */
 }
 
 /* Добавляем scrollbar отступ снизу */
-article::-webkit-scrollbar-track {
-    margin-top: 51px;
+main::-webkit-scrollbar-track {
+    margin-top: var(--header-height);
 }
 
-/* CSS for other than iOS devices */ 
+/* Не для iOS */ 
 @supports not (-webkit-touch-callout: none) {
-    article {
+    main {
         overflow-y: overlay; /* Scroll поверх */
     }
 }
@@ -57,4 +56,16 @@ hr {
     width: 100%;
     border: none; /* Отключаем стандартную обводку и ставим обводку 2px */
     border-bottom: 2px solid var(--border-primary);
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-tiny);
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-tiny);
 }

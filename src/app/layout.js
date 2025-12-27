@@ -1,26 +1,24 @@
-import { Montserrat } from "next/font/google";
-
-import "./app.css"; 
-import "./app-phone.css"; 
-import "./styles/style.css";
+import { montserrat, _metadata, _viewport } from "@/components/metadata";
+import Providers from "./providers"
 import Header from "@/components/Header/Header";
+import "./styles/app.css"; 
+import "./styles/app-phone.css"; 
+import "./styles/style.css";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
-
-export const metadata = {
-    title: "Ежиное Телевидение",
-    description: "Лучшая альтернатива ютубу",
-};
+export const metadata = _metadata
+export const viewport = _viewport
 
 export default function RootLayout({ children }) {
     return (
         <html lang="ru">
             <body className={montserrat.className}>
-                <Header />
-                
-                <article>
-                    {children}
-                </article>
+                <Providers>
+                    <Header />
+                    
+                    <main>
+                        {children}
+                    </main>
+                </Providers>
             </body>
         </html>
     );

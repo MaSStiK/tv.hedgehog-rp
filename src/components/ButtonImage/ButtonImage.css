@@ -28,7 +28,7 @@
 }
 
 /* Мобильное сжатие */
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
     .button-image_phoneTextHide p {
         display: none;
     }

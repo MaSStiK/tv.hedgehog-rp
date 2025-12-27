@@ -1,5 +1,5 @@
 // Преобразовать timestamp в дату
-export default function timestampToDate(timestamp = 0) {
+export default function isoToDate(timestamp = 0) {
     // Если приходит timestamp = undefined - становиться 0
 
     // Конвертируем в timestamp если получили дату
@@ -14,8 +14,6 @@ export default function timestampToDate(timestamp = 0) {
     const [day, month, year] = fullDate.split(".")
     const [hours, minutes, seconds] = fullTime.split(":")
 
-    console.log(fullDate, fullTime);
-    
     const MONTHS = {
         "01": "янв",
         "02": "фев",
@@ -47,14 +45,14 @@ export default function timestampToDate(timestamp = 0) {
     }
 
     let nowDate = new Date()
-    let nowYear = nowDate.getFullYear()
+    // let nowYear = nowDate.getFullYear()
 
     return {
         stringTime: `${hours}:${minutes}`,
         stringDate: fullDate,
         dateWithMonth: `${day} ${MONTHS[month]} ${year}`,
         dateWithFullMonth: `${day} ${FULL_MONTHS[month]} ${year}`,
-        passNow: timestamp < nowDate.getTime()
+        isReleased: timestamp < nowDate.getTime()
     }
 }
 

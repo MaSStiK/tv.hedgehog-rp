@@ -12,7 +12,7 @@
     --button-bg-tp: #FFFFFF00;
     --button-hover-tp: #FFFFFF1F;
 
-    --button-bg-clicked: #4b4753;
+    --button-bg-active: #4b4753;
     --button-bg-disabled: #2E2C35;
 
     /* Обычная кнопка (картинка на 12px меньше - 6px отступ) */
@@ -30,7 +30,7 @@
 }
 
 /* Обычная кнопка (Серая) */
-button {
+:is(button, .button) {
     width: min(200px, 100%);
     min-height: var(--button-height);
     padding: var(--button-padding);
@@ -55,22 +55,22 @@ button {
 }
 
 /* Важная кнопка (Зеленая) */
-button.green {
+:is(button, .button).green {
     background-color: var(--button-bg-green);
 }
 
 /* Опасная кнопка (Красная) */
-button.red {
+:is(button, .button).red {
     background-color: var(--button-bg-red);
 }
 
 /* Кнопка в списке (Прозрачная) */
-button.tp {
+:is(button, .button).tp {
     background-color: var(--button-bg-tp);
 }
 
 
-/* Отключенная кнопка */
+/* Отключенная кнопка (у класса .button не сработает) */
 button:disabled {
     cursor: not-allowed;
     color: var(--text-dark);
@@ -88,35 +88,30 @@ button:disabled img {
 }
 
 /* Нажатая кнопка */
-button.clicked {
-    background-color: var(--button-bg-clicked);
+:is(button, .button).active {
+    background-color: var(--button-bg-active);
 }
 
 
 /* Наведение на пк */
 @media (hover: hover) {
-    button:hover,
-    button:focus-visible {
+    :is(button, .button):is(:hover, :focus-visible) {
         background-color: var(--button-hover);
     }
 
-    button.green:hover,
-    button.green:focus-visible {
+    :is(button, .button).green:is(:hover, :focus-visible) {
         background-color: var(--button-hover-green);
     }
 
-    button.red:hover,
-    button.red:focus-visible {
+    :is(button, .button).red:is(:hover, :focus-visible) {
         background-color: var(--button-hover-red);
     }
 
-    button.tp:hover,
-    button.tp:focus-visible {
+    :is(button, .button).tp:is(:hover, :focus-visible) {
         background-color: var(--button-hover-tp);
     }
 
-    button:disabled:hover,
-    button:disabled:focus-visible {
+    :is(button, .button):disabled:is(:hover, :focus-visible) {
         background-color: var(--button-bg-disabled);
     }
 }
@@ -124,23 +119,23 @@ button.clicked {
 
 /* Клик на телефоне */
 @media (hover: none) {
-    button:active {
+    :is(button, .button):active {
         background-color: var(--button-hover);
     }
 
-    button.green:active {
+    :is(button, .button).green:active {
         background-color: var(--button-hover-green);
     }
 
-    button.red:active {
+    :is(button, .button).red:active {
         background-color: var(--button-hover-red);
     }
 
-    button.tp:active {
+    :is(button, .button).tp:active {
         background-color: var(--button-hover-tp);
     }
 
-    button:disabled:active {
+    :is(button, .button):disabled:active {
         background-color: var(--button-bg-disabled);
     }
 }

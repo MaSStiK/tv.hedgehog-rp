@@ -1,18 +1,25 @@
-"use client";
-import VideoList from "@/components/VideoList/VideoList";
-import seasons from "@/components/seasons.js";
+import Season from "@/components/Season/Season"
+import { seasons } from "@/lib/series"
+
+export const metadata = {
+    title: "Ежиное Телевидение"
+}
 
 export default function Home() {
-    return (<>
-        {Object.keys(seasons).map((season, i) => (
-            <section key={i}>
-                <VideoList
-                    title={seasons[season].title}
-                    videos={seasons[season].videos}
-                />
+    const entries = Object.entries(seasons);
 
-                {i !== Object.keys(seasons).length - 1 && <hr/>}
-            </section>
-        ))}
-    </>)
+    return (
+        <>
+            {entries.map(([key, season], i) => (
+                <section key={key}>
+                    <Season
+                        title={season.title}
+                        episodes={season.episodes}
+                    />
+
+                    {i !== entries.length - 1 && <hr/>}
+                </section>
+            ))}
+        </>
+    )
 }

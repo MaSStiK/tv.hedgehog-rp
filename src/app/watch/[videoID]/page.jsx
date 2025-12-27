@@ -1,57 +1,29 @@
-"use client";
-import { useState, useEffect } from "react";
-import { useParams } from "next/navigation"
-import VideoList from "@/components/VideoList/VideoList";
-import seasons from "@/components/seasons.js";
-import ToDate from "@/components/timestampToDate"
+import { notFound } from 'next/navigation';
+import Player from "@/components/Player/Player"
+import Season from "@/components/Season/Season"
+import { seasons, getEpisode } from "@/lib/series"
 
-import "./watch.css";
+export default function Watch({ params }) {
+    const { videoID } = params
+    const episode = getEpisode(videoID)
 
-export default function Watch() {
-    const [Video, setVideo] = useState({})
-    const params = useParams()
+    if (!episode || Object.keys(episode).length === 0) {
+        notFound()
+    }
 
-    useEffect(() => {
-        let videoID = params.videoID // Получаем id из ссылки
-        let videoSeason = videoID.split("e")[0] // Сезон видео
-        let videoIndex = seasons[videoSeason].videos.findIndex(el => el.videoID === videoID)
-        setVideo({
-            id: videoID,
-            src: seasons[videoSeason].videos[videoIndex].src,
-            title: seasons[videoSeason].videos[videoIndex].title,
-            publishedAt: seasons[videoSeason].videos[videoIndex].publishedAt,
-            views: seasons[videoSeason].videos[videoIndex].views,
-            season: videoSeason
-        })
-    }, [params]);
-
-     return (<>
-        <div className="player-wrapper">
-            <iframe className="player" src={ToDate(Video.publishedAt).passNow ? Video.src : ""} allow="autoplay" allowFullScreen></iframe>
-            {Object.keys(Video).length !== 0 &&
-                <div className="player__info">
-                    {ToDate(Video.publishedAt).passNow
-                        ? <>
-                            <h3>{Video.title}</h3>
-                            <p className="text-gray">{Video.views}</p>
-                            <p className="text-gray">{ToDate(Video.publishedAt).dateWithMonth}</p>
-                          </>
-                        : <h3>Серия станет доступной {ToDate(Video.publishedAt).dateWithFullMonth} в {ToDate(Video.publishedAt).stringTime} по МСК</h3>
-                    }
-                </div>
+    return (
+        <>
+            <Player videoID={videoID} />
+            <hr/>
+            {episode.season &&
+                <section>
+                    <Season
+                        title={`Другие серии ${episode.season.slice(1)} сезона`}
+                        episodes={seasons[episode.season].episodes}
+                        highlightId={episode.videoID}
+                    />
+                </section>
             }
-        </div>
-
-        <hr/>
-
-        {Video.season &&
-            <section>
-                <VideoList
-                    title={`Другие серии ${Video.season.slice(1)} сезона`}
-                    videos={seasons[Video.season].videos}
-                    highlight={Video.id}
-                />
-            </section>
-        }
-    </>)
+        </>
+    )
 }

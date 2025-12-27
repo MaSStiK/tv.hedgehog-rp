@@ -1,0 +1,60 @@
+/* Блок с плеером видео и информацией */
+.player {
+    width: min(640px, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small);
+    margin: 0 auto;
+}
+
+/* Контейнер с проигрывателем и удержанием обложки внутри */
+.player-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    position: relative;
+}
+
+/* Обложка видео поверх iframe */
+.player-frame__thumbnail {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+    transition: all 0.4s ease;
+}
+
+/* Растягиваем картинку поверх всего player-frame */
+.player-frame__thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+/* Когда iframeLoaded=true активируется плавная анимация исчезновения превью */
+.player-frame.loaded .player-frame__thumbnail {
+    opacity: 0;
+    transform: scale(1.03);
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+.player-frame__iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-primary);
+    outline: none;
+    z-index: 1;
+}
+
+/* Блок с информацией */
+/* todo: Сделать информацию о видео над проигрывателем в виде подробной информации */
+.player__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-tiny);
+}

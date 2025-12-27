@@ -2,8 +2,6 @@
 @import "./link.css";
 @import "./button.css";
 @import "./input.css";
-@import "./select.css";
-
 
 :root {
     /* Основные цвета */
@@ -36,7 +34,7 @@
 }
 
 /* Контент в 100% */
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
     /* Полоса прокрутки тоньше на телефоне */
     :root {
         --scrollbar-width: 4px

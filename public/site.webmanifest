@@ -1,0 +1,25 @@
+{
+    "id": "/",
+    "name": "Ежиное Телевидение",
+    "short_name": "Ежиное ТВ",
+    "description": "Видеоплатформа Ежиного РП и Ежиных Хроник",
+    "start_url": "/",
+    "display": "standalone",
+    "display_override": ["standalone", "browser"],
+    "background_color": "#14181B",
+    "theme_color": "#14181B",
+    "lang": "ru",
+    "categories": ["entertainment", "video", "community"],
+    "icons": [
+        {
+            "src": "/favicon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

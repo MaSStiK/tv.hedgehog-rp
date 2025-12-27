@@ -1,0 +1,26 @@
+/* Контент в 100% */
+/* Мобильная версия */
+@media (max-width: 900px) {
+    /* Блок с видео: Превью и информация о видео */
+    .episode {
+        width: 100%;
+        gap: var(--gap-small);
+        flex-direction: row;
+    }
+
+    /* Подсветка текущего эпизода */
+    .episode_highlight {
+        background-color: var(--episode-highlight-bg);
+        outline: 6px solid var(--episode-highlight-bg);
+    }
+
+    /* Фиксированная высота превью */
+    .episode__thumbnail {
+        width: 200px;
+    }
+
+    /* Информация об эпизоде под превью */
+    .episode__info {
+        width: calc(100% - 200px - var(--gap-small));
+    }
+}

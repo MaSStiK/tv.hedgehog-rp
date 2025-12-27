@@ -17,8 +17,7 @@ a {
 
 /* Наведение на пк */
 @media (hover: hover) {
-    .text-link:hover,
-    .text-link:focus-visible {
+    .text-link:is(:hover, :focus-visible) {
         text-decoration: underline;
     }
 }
@@ -43,7 +42,6 @@ a {
     width: var(--img-small);
     height: var(--img-small);
     opacity: 0.5; /* Серая картинка */
-    /* background-image: url("../assets/svg//Linkout.svg"); */
     background-size: contain;
     background-repeat: no-repeat;
 

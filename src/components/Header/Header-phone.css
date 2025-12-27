@@ -1,6 +1,26 @@
 /* Контент в 100% */
-@media screen and (max-width: 900px) {
-    .header__button p {
-        text-align: left;
+@media (max-width: 900px) {
+    /* Уменьшаем отступ */
+    header {
+        gap: var(--gap-medium);
+    }
+}
+
+@media (max-width: 500px) {
+    /* Уменьшаем отступ */
+    header {
+        gap: var(--gap-medium);
+    }
+
+    /* Уменьшаем заголовок */
+    .header__title h1 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Уменьшаем заголовок */
+    .header__title h1 {
+        font-size: 12px;
     }
 }

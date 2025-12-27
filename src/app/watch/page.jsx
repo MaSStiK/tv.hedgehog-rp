@@ -1,14 +1,7 @@
-"use client";
-import { useEffect } from "react";
 import { redirect } from "next/navigation"
 
 export default function WatchEmpty() {
-    // Если в ссылке нету id видео - перекидываем на главную
-    useEffect(() => {
-        redirect("/")
-    }, [])
-
-    return (
-        <></>
-    )
+    // Если ссылка просто /watch - значит в ссылке нету id видео
+    // Редиректим на главную
+    redirect("/")
 }

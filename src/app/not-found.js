@@ -1,5 +1,6 @@
 import Link from "next/link"
 
+// Страница не найдена
 export default function NotFound() {
     return (
         <>

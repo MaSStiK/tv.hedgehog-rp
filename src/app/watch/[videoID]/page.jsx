@@ -1,29 +1,35 @@
-import { notFound } from 'next/navigation';
+import { notFound } from "next/navigation"
 import Player from "@/components/Player/Player"
-import Season from "@/components/Season/Season"
-import { seasons, getEpisode } from "@/lib/series"
+import PlayerSeason from "@/components/Player/PlayerSeason"
+import { getEpisode } from "@/lib/series"
 
+// Генерация метаданных для вставки названия эпизода в название страницы
+export async function generateMetadata({ params }) {
+    const { videoID } = params
+    const episode = getEpisode(videoID)
+
+    // Если эпизод не найден
+    if (!episode) return { title: "Эпизод не найден" }
+
+    return {
+        title: episode.title,
+        description: `Смотреть серию "${episode.title}"`
+    }
+}
+
+// Страница с просмотром серии
 export default function Watch({ params }) {
     const { videoID } = params
     const episode = getEpisode(videoID)
 
-    if (!episode || Object.keys(episode).length === 0) {
-        notFound()
-    }
+    // Если эпизод не найден
+    if (!episode || Object.keys(episode).length === 0) notFound()
 
     return (
         <>
             <Player videoID={videoID} />
             <hr/>
-            {episode.season &&
-                <section>
-                    <Season
-                        title={`Другие серии ${episode.season.slice(1)} сезона`}
-                        episodes={seasons[episode.season].episodes}
-                        highlightId={episode.videoID}
-                    />
-                </section>
-            }
+            {episode.seasonKey && <PlayerSeason episode={episode} />}
         </>
     )
 }

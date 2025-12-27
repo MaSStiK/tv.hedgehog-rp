@@ -1,5 +1,6 @@
 import Link from "next/link"
 
+// Эпизод не найден
 export default function NotFound() {
     return (
         <>

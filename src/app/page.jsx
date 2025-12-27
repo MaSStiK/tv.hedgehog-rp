@@ -1,25 +1,14 @@
-import Season from "@/components/Season/Season"
-import { seasons } from "@/lib/series"
-
+import AllSeasons from "@/components/Season/AllSeasons"
 export const metadata = {
     title: "Ежиное Телевидение"
 }
 
+// Главная страница
 export default function Home() {
-    const entries = Object.entries(seasons);
-
     return (
         <>
-            {entries.map(([key, season], i) => (
-                <section key={key}>
-                    <Season
-                        title={season.title}
-                        episodes={season.episodes}
-                    />
-
-                    {i !== entries.length - 1 && <hr/>}
-                </section>
-            ))}
+            <h2>О нас</h2>
+            <AllSeasons />
         </>
     )
 }

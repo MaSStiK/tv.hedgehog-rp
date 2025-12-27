@@ -6,6 +6,7 @@ import isoToDate from "@/lib/utils/isoToDate"
 import "./Episode.css"
 import "./Episode-phone.css"
 
+// Блок с эпизодом, превью и информация под ним
 export default function Episode({ episode, highlightId="" }) {
     const episodeClass = clsx("episode", {
         episode_highlight: episode.videoID === highlightId

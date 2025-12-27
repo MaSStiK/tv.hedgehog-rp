@@ -1,8 +1,7 @@
-import { montserrat, _metadata, _viewport } from "@/components/metadata";
-import Providers from "./providers"
-import Header from "@/components/Header/Header";
-import "./styles/app.css"; 
-import "./styles/app-phone.css"; 
+import { montserrat, _metadata, _viewport } from "@/components/metadata"
+import Header from "@/components/Header/Header"
+import "./styles/app.css"
+import "./styles/app-phone.css"
 import "./styles/style.css";
 
 export const metadata = _metadata
@@ -12,13 +11,10 @@ export default function RootLayout({ children }) {
     return (
         <html lang="ru">
             <body className={montserrat.className}>
-                <Providers>
-                    <Header />
-                    
-                    <main>
-                        {children}
-                    </main>
-                </Providers>
+                <Header />
+                <main>
+                    {children}
+                </main>
             </body>
         </html>
     );

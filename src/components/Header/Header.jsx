@@ -7,6 +7,7 @@ import imgSearch from "@/assets/svg/Search.svg"
 import "./Header.css"
 import "./Header-phone.css"
 
+// Хедер страницы
 export default function Header() {
     return (
         <header>

@@ -1,0 +1,25 @@
+button.tooltip {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    opacity: 0.5;
+    margin: auto 0;
+}
+
+/* Наведение на пк */
+@media (hover: hover) {
+    :is(button.tooltip.tp):is(:hover, :focus-visible) {
+        background-color: transparent;
+        opacity: 1;
+    }
+}
+
+
+/* Клик на телефоне */
+@media (hover: none) {
+    :is(button.tooltip.tp):active {
+        background-color: transparent;
+        opacity: 1;
+    }
+}

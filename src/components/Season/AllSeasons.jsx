@@ -1,5 +1,6 @@
 import Season from "@/components/Season/Season"
 import { seasons } from "@/lib/series"
+import { Fragment } from "react"
 
 export default function AllSeasons() {
     const entries = Object.entries(seasons).sort(
@@ -8,15 +9,16 @@ export default function AllSeasons() {
 
     return (
         <>
-            {entries.map(([seasonKey, season], i) => (
-                <section key={seasonKey}>
-                    <Season
-                        title={season.title}
-                        episodes={season.episodes}
-                    />
-
-                    {i !== entries.length - 1 && <hr/>}
-                </section>
+            {entries.map(([seasonKey, season]) => (
+                <Fragment key={seasonKey}>
+                    <hr/>
+                    <section >
+                        <Season
+                            title={season.title}
+                            episodes={season.episodes}
+                        />
+                    </section>
+                </Fragment>
             ))}
         </>
     )

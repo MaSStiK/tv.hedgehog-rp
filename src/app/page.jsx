@@ -1,3 +1,4 @@
+import AboutProject from "@/components/AboutProject/AboutProject"
 import AllSeasons from "@/components/Season/AllSeasons"
 export const metadata = {
     title: "Ежиное Телевидение"
@@ -7,7 +8,7 @@ export const metadata = {
 export default function Home() {
     return (
         <>
-            <h2>О нас</h2>
+            <AboutProject />
             <AllSeasons />
         </>
     )

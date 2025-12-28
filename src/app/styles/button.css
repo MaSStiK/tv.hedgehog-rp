@@ -92,6 +92,11 @@ button:disabled img {
     background-color: var(--button-bg-active);
 }
 
+/* Кнопка во всю ширину */
+:is(button, .button).width100 {
+    width: 100%;
+}
+
 
 /* Наведение на пк */
 @media (hover: hover) {

@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation"
+import Disclaimer from "@/components/Disclaimer/Disclaimer"
 import Player from "@/components/Player/Player"
 import PlayerSeason from "@/components/Player/PlayerSeason"
 import { getEpisode } from "@/lib/series"
@@ -26,10 +27,11 @@ export default function Watch({ params }) {
     if (!episode || Object.keys(episode).length === 0) notFound()
 
     return (
-        <>
+        <main>
+            <Disclaimer />
             <Player videoID={videoID} />
             <hr/>
             {episode.seasonKey && <PlayerSeason episode={episode} />}
-        </>
+        </main>
     )
 }

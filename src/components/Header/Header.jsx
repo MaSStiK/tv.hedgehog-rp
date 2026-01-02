@@ -17,6 +17,7 @@ export default function Header() {
                     alt="Ежиное Телевидение"
                     width={56}
                     height={56}
+                    priority
                 />
                 <h1>Ежиное Телевидение</h1>
             </Link>

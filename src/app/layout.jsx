@@ -12,9 +12,7 @@ export default function RootLayout({ children }) {
         <html lang="ru">
             <body className={montserrat.className}>
                 <Header />
-                <main>
-                    {children}
-                </main>
+                {children}
             </body>
         </html>
     );

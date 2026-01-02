@@ -50,11 +50,3 @@
     outline: none;
     z-index: 1;
 }
-
-/* Блок с информацией */
-/* todo: Сделать информацию о видео над проигрывателем в виде подробной информации */
-.player__info {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-tiny);
-}

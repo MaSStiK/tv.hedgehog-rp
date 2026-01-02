@@ -118,3 +118,8 @@ label {
     color: transparent;
     background-color: var(--bg-primary);
 }
+
+/* Подчеркнутый текст */
+.text-underline {
+    text-decoration: underline;
+}

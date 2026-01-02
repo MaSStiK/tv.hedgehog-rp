@@ -7,9 +7,9 @@ export const metadata = {
 // Главная страница
 export default function Home() {
     return (
-        <>
+        <main>
             <AboutProject />
             <AllSeasons />
-        </>
+        </main>
     )
 }

@@ -1,17 +1,19 @@
 /* О Ежиных Хрониках */
 .about-project {
-    display: flex;
-    gap: var(--gap-medium);
-}
+    display: grid;
+    grid-template-columns: minmax(100px, 300px) minmax(250px, 600px);
+    grid-template-rows: auto 1fr;
+    grid-gap: var(--gap-medium);
 
-/* Альтернативное название проекта */
-.about-project__alt-title {
-    font-weight: 400;
+    grid-template-areas:
+        "cover info"
+        "cover desc";
 }
 
 /* Обложка проекта */
 .about-project__cover {
     max-width: 300px;
+    grid-area: cover;
     aspect-ratio: 1000 / 1491;
     overflow: hidden;
 }
@@ -23,9 +25,43 @@
     object-position: center;
 }
 
+/* Информация о проекте */
+.about-project__info {
+    grid-area: info;
+}
+
+/* Альтернативное название проекта */
+.about-project__info h3 {
+    font-weight: 400;
+}
+
 /* Описание проекта */
-.about-project__description {
-    max-width: 500px;
+.about-project__desc {
+    grid-area: desc;
     white-space: pre-line;
-    /* margin: var(--gap-small) 0; */
+}
+
+/* Мобильная версия */
+@media (max-width: 900px) {
+    .about-project {
+        grid-template-areas:
+            "cover info"
+            "desc desc";
+    }
+}
+
+@media (max-width: 400px) {
+    .about-project {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cover"
+            "info"
+            "desc";
+    }
+
+    .about-project__cover {
+        max-width: 200px;
+        margin: 0 auto;
+    }
 }

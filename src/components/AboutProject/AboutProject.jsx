@@ -48,7 +48,7 @@ export default function AboutProject() {
                     </div>
 
                     <div className="flex-col gap-tiny">
-                        <p>Рейтинг: <Link className="text-lightgray text-underline" href="/rating">Oleg Films</Link></p>
+                        <p>Рейтинг: <Link className="text-lightgray text-underline" href="/rating">Oleg Films <strong className="text-lightgray">10/10</strong></Link></p>
                         <p>Страна: <span className="text-lightgray">Ежиная Республика</span></p>
                         <p>Режиссеры: <span className="text-lightgray">Даниил Вудергорский и Эрнест Вудергорский</span></p>
                         <p>Жанр: <span className="text-lightgray">Приключения, комедия, фантастика</span></p>
@@ -57,13 +57,21 @@ export default function AboutProject() {
                             <p>Возраст: <span className="text-lightgray">18+</span></p>
                             <Tooltip content={AgeRatingTooltip} />
                         </div>
-                        <p>По мотивам Ежиного РП</p>
+                        <div className="flex-row gap-tiny">
+                            <p>Входит в списки:</p>
+                            <div className="flex-col gap-tiny">
+                                <span className="text-lightgray">Выдающийся саундтрек 2020 года (1 место)</span>
+                                <span className="text-lightgray">Лучшие комедии 2021 года (1 место)</span>
+                                <span className="text-lightgray">Значимые хроники 2022 года (1 место)</span>
+                                <span className="text-lightgray">Культовые веб-сериалы 2023 года (1 место)</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div className="flex-col gap-tiny about-project__desc">
                     <h2>Про что сериал Ежиные хроники:</h2>
-                    <p className="text-light">Сюжетный сериал о событиях и персонажах вымышленного мира Ежиного РП.
+                    <p className="text-light">Сюжетный сериал по мотивам Ежиного РП, рассказывающий о событиях и персонажах вымышленного мира.
 История подаётся в формате хроник, где каждая серия раскрывает отдельные эпизоды жизни героев, их конфликты, союзы и приключения.
 Все события объединены общей вселенной и постепенно складываются в цельную картину происходящего.</p>
                 </div>

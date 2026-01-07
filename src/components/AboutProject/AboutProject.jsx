@@ -48,7 +48,7 @@ export default function AboutProject() {
                     </div>
 
                     <div className="flex-col gap-tiny">
-                        <p>Рейтинг: <Link className="text-lightgray text-underline" href="/rating">Oleg Films <strong className="text-lightgray">10/10</strong></Link></p>
+                        <p>Рейтинг: <Link className="text-link text-underline" href="/rating">ЛеФильм <strong className="text-link">10/10</strong></Link></p>
                         <p>Страна: <span className="text-lightgray">Ежиная Республика</span></p>
                         <p>Режиссеры: <span className="text-lightgray">Даниил Вудергорский и Эрнест Вудергорский</span></p>
                         <p>Жанр: <span className="text-lightgray">Приключения, комедия, фантастика</span></p>
@@ -60,9 +60,9 @@ export default function AboutProject() {
                         <div className="flex-row gap-tiny">
                             <p>Входит в списки:</p>
                             <div className="flex-col gap-tiny">
-                                <span className="text-lightgray">Выдающийся саундтрек 2020 года (1 место)</span>
-                                <span className="text-lightgray">Лучшие комедии 2021 года (1 место)</span>
-                                <span className="text-lightgray">Значимые хроники 2022 года (1 место)</span>
+                                <span className="text-lightgray">Значимые хроники 2020 года (1 место)</span>
+                                <span className="text-lightgray">Выдающийся саундтрек 2021 года (1 место)</span>
+                                <span className="text-lightgray">Лучшие комедии 2022 года (1 место)</span>
                                 <span className="text-lightgray">Культовые веб-сериалы 2023 года (1 место)</span>
                             </div>
                         </div>

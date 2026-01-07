@@ -2,7 +2,11 @@ import { notFound } from "next/navigation"
 import Disclaimer from "@/components/Disclaimer/Disclaimer"
 import Player from "@/components/Player/Player"
 import PlayerSeason from "@/components/Player/PlayerSeason"
-import { getEpisode } from "@/lib/series"
+import { getEpisode, getAllEpisodeIds } from "@/lib/series"
+
+export function generateStaticParams() {
+    return getAllEpisodeIds().map((videoID) => ({ videoID }));
+}
 
 // Генерация метаданных для вставки названия эпизода в название страницы
 export async function generateMetadata({ params }) {

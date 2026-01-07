@@ -37,10 +37,6 @@ export const episodes = Object.entries(seasons).flatMap(
     }
 )
 
-export function getAllEpisodeIds() {
-    return episodes.map((episode) => episode.videoID);
-}
-
 export function getEpisode(videoID) {
     const episode = episodes.find(episode => episode.videoID === videoID)
     return episode

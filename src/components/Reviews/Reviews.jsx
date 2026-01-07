@@ -10,7 +10,7 @@ export default function Reviews() {
             <hr />
             <section className="reviews">
                 <h2>Отзывы с премии ЛеФильм</h2>
-                <div className="flex-col gap-medium">
+                <div className="flex-col gap-5">
                     {reviews.map((item, i) => (
                         <div className="flex-row review" key={i}>
                             <Image
@@ -20,10 +20,10 @@ export default function Reviews() {
                                 width={64}
                                 height={64}
                             />
-                            <div className="flex-col gap-tiny">
+                            <div className="flex-col gap-2">
                                 <div className="flex-row">
                                     <p className="h3">{item.name}</p>
-                                    <div className="flex-row review__rating">
+                                    <div className="flex-row gap-1 review__rating">
                                         <Image
                                             src={imgReviewStar}
                                             alt="Звезда"

@@ -3,7 +3,7 @@
     /* Блок с видео: Превью и информация о видео */
     .episode {
         width: 100%;
-        gap: var(--gap-small);
+        gap: var(--gap-3);
         flex-direction: row;
     }
 
@@ -20,6 +20,6 @@
 
     /* Информация об эпизоде под превью */
     .episode__info {
-        width: calc(100% - 200px - var(--gap-small));
+        width: calc(100% - 200px - var(--gap-3));
     }
 }

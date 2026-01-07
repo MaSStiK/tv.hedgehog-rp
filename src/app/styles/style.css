@@ -15,9 +15,11 @@
     --border-radius: 4px;
 
     /* Отступы между и внутри блоков */
-    --gap-tiny: 4px;
-    --gap-small: 12px;
-    --gap-medium: 20px;
+    --gap-1: 4px;
+    --gap-2: 8px;
+    --gap-3: 12px;
+    --gap-4: 16px;
+    --gap-5: 20px;
 
     /* Ширина scrollbar */
     --scrollbar-width: 6px;

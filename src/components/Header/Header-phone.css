@@ -2,14 +2,14 @@
 @media (max-width: 900px) {
     /* Уменьшаем отступ */
     header {
-        gap: var(--gap-medium);
+        gap: var(--gap-5);
     }
 }
 
 @media (max-width: 500px) {
     /* Уменьшаем отступ */
     header {
-        gap: var(--gap-medium);
+        gap: var(--gap-5);
     }
 
     /* Уменьшаем заголовок */

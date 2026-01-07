@@ -10,7 +10,7 @@ header {
     gap: 40px;
     justify-content: center;
     align-items: center;
-    padding: 0 var(--gap-small);
+    padding: 0 var(--gap-3);
 
     background-color: var(--bg-secondary);
     border-bottom: 1px solid var(--border-primary);
@@ -25,7 +25,7 @@ header {
 .header__title {
     display: flex;
     align-items: center;
-    gap: var(--gap-small);
+    gap: var(--gap-3);
 }
 
 .input-wrapper {

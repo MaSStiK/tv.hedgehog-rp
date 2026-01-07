@@ -36,9 +36,9 @@ export default function AboutProject({ withoutLink=false }) {
                 </Link>
                 
                 <div className="flex-col about-project__info">
-                    <div className="flex-col gap-tiny">
+                    <div className="flex-col gap-1">
                         <h2>Ежиные хроники</h2>
-                        <div className="flex-row gap-tiny">
+                        <div className="flex-row gap-1">
                             <h3 className="text-gray"
                                 lang="x-hedgehog"
                                 title="Название на ежином"
@@ -47,7 +47,7 @@ export default function AboutProject({ withoutLink=false }) {
                         </div>
                     </div>
 
-                    <div className="flex-col gap-tiny">
+                    <div className="flex-col gap-1">
                         {!withoutLink && <p>Рейтинг: <Link className="text-link text-underline" href="/reviews">ЛеФильм <strong className="text-link">10/10</strong></Link></p>}
                         <p>Страна: <span className="text-lightgray">Ежиная Республика</span></p>
                         <p>Автор идеи: <span className="text-lightgray">Эрнест Вудергорский</span></p>
@@ -55,13 +55,13 @@ export default function AboutProject({ withoutLink=false }) {
                         <p>Сценарист: <span className="text-lightgray">Даниил Вудергорский</span></p>
                         <p>Жанр: <span className="text-lightgray">Приключения, комедия, фантастика</span></p>
                         <p>Период выпуска: <span className="text-lightgray">С 30 июля 2020 года по настоящее время</span></p>
-                        <div className="flex-row gap-tiny">
+                        <div className="flex-row gap-1">
                             <p>Возраст: <span className="text-lightgray">18+</span></p>
                             <Tooltip content={AgeRatingTooltip} />
                         </div>
-                        <div className="flex-row gap-tiny">
+                        <div className="flex-row gap-1">
                             <p>Входит в списки:</p>
-                            <div className="flex-col gap-tiny">
+                            <div className="flex-col gap-1">
                                 <span className="text-lightgray">Значимые хроники 2020 года (1 место)</span>
                                 <span className="text-lightgray">Выдающийся саундтрек 2021 года (1 место)</span>
                                 <span className="text-lightgray">Лучшие комедии 2022 года (1 место)</span>
@@ -71,7 +71,7 @@ export default function AboutProject({ withoutLink=false }) {
                     </div>
                 </div>
 
-                <div className="flex-col gap-tiny about-project__desc">
+                <div className="flex-col gap-1 about-project__desc">
                     <h2>Про что сериал Ежиные хроники:</h2>
                     <p className="text-light">Сюжетный сериал по мотивам Ежиного РП, рассказывающий о событиях и персонажах вымышленного мира.
 История подаётся в формате хроник, где каждая серия раскрывает отдельные эпизоды жизни героев, их конфликты, союзы и приключения.

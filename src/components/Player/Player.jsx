@@ -50,7 +50,7 @@ export default function Player({ videoID }) {
                     onLoad={() => setIframeLoaded(true)}
                 />
             </div>
-            <div className="flex-col gap-tiny">
+            <div className="flex-col gap-1">
                 <PlayerInfo episode={episode} date={date} />
             </div>
         </section>

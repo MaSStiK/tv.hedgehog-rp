@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: minmax(100px, 300px) minmax(250px, 600px);
     grid-template-rows: auto 1fr;
-    grid-gap: var(--gap-medium);
+    grid-gap: var(--gap-5);
 
     grid-template-areas:
         "cover info"

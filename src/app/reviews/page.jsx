@@ -4,7 +4,7 @@ import Reviews from "@/components/Reviews/Reviews"
 export default function ReviewsPage() {
     return (
         <main>
-            <AboutProject />
+            <AboutProject withoutLink={true} />
             <Reviews />
         </main>
     )

@@ -32,7 +32,7 @@ export default function Player({ videoID }) {
     })
 
     return (
-        <div className="player">
+        <section className="player">
             <div className={episodeClass}>
                 <div className="player-frame__thumbnail">
                     <Image src={thumbnailSrc}
@@ -53,7 +53,7 @@ export default function Player({ videoID }) {
             <div className="flex-col gap-tiny">
                 <PlayerInfo episode={episode} date={date} />
             </div>
-        </div>
+        </section>
     )
 }
 

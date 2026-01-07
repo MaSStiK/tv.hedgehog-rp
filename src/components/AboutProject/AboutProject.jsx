@@ -19,7 +19,7 @@ const AgeRatingTooltip = (
     </div>
 )
 
-const coverUrl = "/cover-v2.png"
+const coverUrl = "/cover.png"
 
 export default function AboutProject() {
     return (
@@ -48,9 +48,11 @@ export default function AboutProject() {
                     </div>
 
                     <div className="flex-col gap-tiny">
-                        <p>Рейтинг: <Link className="text-link text-underline" href="/rating">ЛеФильм <strong className="text-link">10/10</strong></Link></p>
+                        <p>Рейтинг: <Link className="text-link text-underline" href="/reviews">ЛеФильм <strong className="text-link">10/10</strong></Link></p>
                         <p>Страна: <span className="text-lightgray">Ежиная Республика</span></p>
-                        <p>Режиссеры: <span className="text-lightgray">Даниил Вудергорский и Эрнест Вудергорский</span></p>
+                        <p>Автор идеи: <span className="text-lightgray">Эрнест Вудергорский</span></p>
+                        <p>Режиссер: <span className="text-lightgray">Алексей Дедов</span></p>
+                        <p>Сценарист: <span className="text-lightgray">Даниил Вудергорский</span></p>
                         <p>Жанр: <span className="text-lightgray">Приключения, комедия, фантастика</span></p>
                         <p>Период выпуска: <span className="text-lightgray">С 30 июля 2020 года по настоящее время</span></p>
                         <div className="flex-row gap-tiny">

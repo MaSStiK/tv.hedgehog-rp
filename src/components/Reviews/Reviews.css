@@ -1,0 +1,17 @@
+/* Секция с отзывами */
+.reviews {
+    width: min(920px, 100%);
+}
+
+.review {
+    width: 100%;
+}
+
+.review__image {
+    border-radius: 50%;
+}
+
+.review__rating {
+    gap: 4px;
+    align-items: center;
+}

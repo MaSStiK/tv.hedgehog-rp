@@ -1,5 +1,5 @@
 import Image from "next/image"
-import reviews from "./reviews.js"
+import reviews from "./reviewsData.js"
 import imgReviewStar from "@/assets/reviews/review-star.png"
 
 import "./Reviews.css"

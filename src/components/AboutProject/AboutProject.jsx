@@ -21,7 +21,7 @@ const AgeRatingTooltip = (
 
 const coverUrl = "/cover.png"
 
-export default function AboutProject({ withoutLink=false }) {
+export default function AboutProject() {
     return (
         <section>
             <div className="about-project">
@@ -48,7 +48,7 @@ export default function AboutProject({ withoutLink=false }) {
                     </div>
 
                     <div className="flex-col gap-1">
-                        {!withoutLink && <p>Рейтинг: <Link className="text-link text-underline" href="/reviews">ЛеФильм <strong className="text-link">10/10</strong></Link></p>}
+                        <p>Рейтинг: <Link className="text-link text-underline" href="/reviews">ЛеФильм <strong className="text-link">10/10</strong></Link></p>
                         <p>Страна: <span className="text-lightgray">Ежиная Республика</span></p>
                         <p>Автор идеи: <span className="text-lightgray">Эрнест Вудергорский</span></p>
                         <p>Режиссер: <span className="text-lightgray">Алексей Дедов</span></p>

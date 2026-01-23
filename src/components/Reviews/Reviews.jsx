@@ -1,6 +1,5 @@
 import Image from "next/image"
 import reviews from "./reviewsData.js"
-import imgReviewStar from "@/assets/reviews/review-star.png"
 
 import "./Reviews.css"
 
@@ -25,8 +24,10 @@ export default function Reviews() {
                                     <p className="h3">{item.name}</p>
                                     <div className="flex-row gap-1 review__rating">
                                         <Image
-                                            src={imgReviewStar}
+                                            src="/reviews/review-star.png"
                                             alt="Звезда"
+                                            width={20}
+                                            height={20}
                                         />
                                         <p className="h3">10</p>
                                     </div>

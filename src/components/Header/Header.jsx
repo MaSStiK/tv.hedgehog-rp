@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import ButtonImage from "../ButtonImage/ButtonImage"
-import imgLogoTV from "@/assets/logotype-tv.png"
+import imgLogoTV from "@/assets/logotype-tv.webp"
 import imgSearch from "@/assets/svg/Search.svg"
 
 import "./Header.css"

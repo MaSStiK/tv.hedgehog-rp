@@ -10,7 +10,7 @@ export default function Season({ title, episodes, highlightId=""}) {
         <div className="season">
             <h2>{title}</h2>
             <div className="episode-list">
-                {episodes.map((item, i) => 
+                {[...episodes].reverse().map((item, i) => 
                     <Episode episode={item} highlightId={highlightId} key={item.videoID} />
                 )}
             </div>

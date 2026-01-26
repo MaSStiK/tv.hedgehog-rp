@@ -25,13 +25,14 @@ export async function GET(req) {
         )
     }
 
-    const lastEpisode = {
-        ...last,
-        // Заменяем ссылку на просмотр на ссылку на сайт
-        src: `${url.origin}/watch/${last.videoID}`,
-        // Заменяем ссылку на превью
-        thumbnail: `${url.origin}/${String(last.thumbnail).replace(/^\//, "")}`,
-    }
+    const lastEpisode = { ...last }
+    delete lastEpisode.src // Удаляем src
+
+    // Заменяем ссылку на просмотр на ссылку на сайт
+    lastEpisode.href `${url.origin}/watch/${last.videoID}`
+    
+    // Заменяем ссылку на превью
+    lastEpisode.thumbnail `${url.origin}/${String(last.thumbnail).replace(/^\//, "")}`
 
     return Response.json(
         { success: true, data: lastEpisode },

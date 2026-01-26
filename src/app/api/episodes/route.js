@@ -19,7 +19,7 @@ export async function GET() {
     // Если серия не найдена
     if (!last) {
         return Response.json(
-            { success: false, data: lastEpisode },
+            { success: false, episode: null },
             { headers: { ...corsHeaders, "Content-Type": "application/json" }}
         )
     }
@@ -34,7 +34,7 @@ export async function GET() {
     lastEpisode.thumbnail = `https://tv.hedgehog-rp.ru/${String(last.thumbnail).replace(/^\//, "")}`
 
     return Response.json(
-        { success: true, data: lastEpisode },
+        { success: true, episode: lastEpisode },
         { headers: { ...corsHeaders, "Content-Type": "application/json" }}
     )
 }

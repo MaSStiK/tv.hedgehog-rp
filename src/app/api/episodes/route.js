@@ -13,8 +13,7 @@ export async function OPTIONS() {
     })
 }
 
-export async function GET(req) {
-    const url = new URL(req.url)
+export async function GET() {
     const last = episodes.at(-1)
 
     // Если серия не найдена
@@ -29,10 +28,10 @@ export async function GET(req) {
     delete lastEpisode.src // Удаляем src
 
     // Заменяем ссылку на просмотр на ссылку на сайт
-    lastEpisode.href `${url.origin}/watch/${last.videoID}`
+    lastEpisode.href = `https://tv.hedgehog-rp.ru/watch/${last.videoID}`
     
     // Заменяем ссылку на превью
-    lastEpisode.thumbnail `${url.origin}/${String(last.thumbnail).replace(/^\//, "")}`
+    lastEpisode.thumbnail = `https://tv.hedgehog-rp.ru/${String(last.thumbnail).replace(/^\//, "")}`
 
     return Response.json(
         { success: true, data: lastEpisode },

@@ -73,7 +73,8 @@ export default function AboutProject() {
 
                 <div className="flex-col gap-1 about-project__desc">
                     <h2>Про что сериал Ежиные хроники:</h2>
-                    <p className="text-light">Сюжетный сериал по мотивам Ежиного РП, рассказывающий о событиях и персонажах вымышленного мира.
+                    <p className="text-light">Сюжетный сериал по мотивам <Link className="text-link text-underline" href="https://hedgehog-rp.ru/" target="_blank" rel="noopener noreferrer">Ежиного РП</Link>,
+рассказывающий о событиях и персонажах вымышленного мира.
 История подаётся в формате хроник, где каждая серия раскрывает отдельные эпизоды жизни героев, их конфликты, союзы и приключения.
 Все события объединены общей вселенной и постепенно складываются в цельную картину происходящего.</p>
                 </div>

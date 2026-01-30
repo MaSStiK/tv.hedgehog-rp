@@ -1,63 +1,27 @@
-// Преобразовать timestamp в дату
-export default function isoToDate(timestamp = 0) {
-    // Если приходит timestamp = undefined - становиться 0
+import moment from "moment-timezone";
+import "moment/locale/ru";
 
-    // Конвертируем в timestamp если получили дату
-    if (typeof timestamp === "string") timestamp = convertToTimestamp(timestamp)
+moment.updateLocale("ru", {
+    monthsShort: [
+        "янв", "фев", "мар", "апр",
+        "май", "июн", "июл", "авг",
+        "сен", "окт", "ноя", "дек",
+    ]
+})
 
-    let date = new Date(timestamp)
+// Преобразовать timestamp/ISO-строку в разные представления даты
+export default function isoToDate(input=0) {
+    moment.locale("ru")
 
-    // Привязка с мск
-    let localeDate = date.toLocaleString("ru-RU", { timeZone: "Europe/Moscow" })
-    
-    const [fullDate, fullTime] = localeDate.split(', ');
-    const [day, month, year] = fullDate.split(".")
-    const [hours, minutes, seconds] = fullTime.split(":")
-
-    const MONTHS = {
-        "01": "янв",
-        "02": "фев",
-        "03": "мар",
-        "04": "апр",
-        "05": "май",
-        "06": "июн",
-        "07": "июл",
-        "08": "авг",
-        "09": "сен",
-        "10": "окт",
-        "11": "ноя",
-        "12": "дек",
-    }
-
-    const FULL_MONTHS = {
-        "01": "января",
-        "02": "февраля",
-        "03": "марта",
-        "04": "апреля",
-        "05": "мая",
-        "06": "июня",
-        "07": "июля",
-        "08": "августа",
-        "09": "сентября",
-        "10": "октября",
-        "11": "ноября",
-        "12": "декабря",
-    }
-
-    let nowDate = new Date()
-    // let nowYear = nowDate.getFullYear()
+    // input может быть: number (timestamp ms), string (ISO), undefined/null
+    const date = moment(input || 0).tz("Europe/Moscow")
+    const now = moment()
 
     return {
-        stringTime: `${hours}:${minutes}`,
-        stringDate: fullDate,
-        dateWithMonth: `${day} ${MONTHS[month]} ${year}`,
-        dateWithFullMonth: `${day} ${FULL_MONTHS[month]} ${year}`,
-        isReleased: timestamp < nowDate.getTime()
+        stringTime: date.format("HH:mm"),
+        stringDate: date.format("DD.MM.YYYY"),
+        dateWithMonth: date.format("DD MMM YYYY"),
+        dateWithFullMonth: date.format("DD MMMM YYYY"),
+        isReleased: date.valueOf() < now.valueOf()
     }
-}
-
-// Конвертация даты формата yyyy-mm-ddThh:mm:ssZ в timestamp
-function convertToTimestamp(dateTimeString) {
-    const date = new Date(dateTimeString);
-    return date.getTime();
 }

@@ -40,8 +40,9 @@ export async function GET() {
         videoID: episode.videoID,
         title: episode.title,
         views: episode.views,
+        publishedAt: episode.publishedAt,
         href: `https://tv.hedgehog-rp.ru/watch/${episode.videoID}`,
-        thumbnail: `https://tv.hedgehog-rp.ru/${thumbnail}`
+        thumbnail: `https://tv.hedgehog-rp.ru/${thumbnail}`,
     }
 
     return Response.json(

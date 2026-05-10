@@ -6,17 +6,17 @@
 
 Платформа использовалась как центральное хранилище видеоконтента сообщества.
 
+## 🔗 Связанные проекты
+- 🌍 [Hedgehog RP](https://github.com/MaSStiK/hedgehog-rp)
+- 🌍 [Онлайн карта](https://github.com/MaSStiK/map.hedgehog-rp)
+- 📊 [Статистика беседы](https://github.com/MaSStiK/stats.hedgehog-rp)
+
 ## 🛠️ Технологии
 - **Next.js** — основа сайта и роутинг
 - **React** — интерфейс приложения
 - **@tippyjs/react** — всплывающие подсказки и интерактивные элементы
 - **clsx** — удобное объединение CSS-классов
 - **moment** — работа с датой и временем
-
-## 🔗 Связанные проекты
-- 🌍 [Hedgehog RP](https://github.com/MaSStiK/hedgehog-rp)
-- 🌍 [Онлайн карта](https://github.com/MaSStiK/map.hedgehog-rp)
-- 📊 [Статистика беседы](https://github.com/MaSStiK/stats.hedgehog-rp)
 
 ## 📸 Скриншоты сайта
 <table>

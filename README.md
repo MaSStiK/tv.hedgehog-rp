@@ -21,14 +21,22 @@
 ## 📸 Скриншоты сайта
 <table>
     <tr>
-        <td align="center">
-            <!-- width="500" alt="screenshot" -->
+        <td align="center" colspan="2">
+            <img width="1500" alt="screenshot" src="https://github.com/user-attachments/assets/1369c803-b9be-41c5-affd-9c3ea713fd10" />
             <br>
-            <p></p>
+            <p>Главная страница</p>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <img width="500" alt="screenshot" src="https://github.com/user-attachments/assets/be0e957e-76a0-45e0-a96e-6ba2d2230ca0" />
+            <br>
+            <p>Просмотр серии</p>
         </td>
         <td align="center">
+            <img width="500" alt="screenshot" src="https://github.com/user-attachments/assets/871aae50-8371-40de-8aea-2f91d8671f0a" />
             <br>
-            <p></p>
+            <p>Отзывы</p>
         </td>
     </tr>
 </table>

@@ -1,4 +1,4 @@
-# Hedgehog-RP TV
+# Hedgehog RP TV
 > **Основной проект:** [hedgehog-rp](https://github.com/MaSStiK/hedgehog-rp)
 
 **Ежиное телевидение** - видеохостинг вселенной Hedgehog RP, разработанный для хранения и просмотра всех серий «Ежиных Хроник».  

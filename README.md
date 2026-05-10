@@ -7,7 +7,7 @@
 Платформа использовалась как центральное хранилище видеоконтента сообщества.
 
 ## 🔗 Связанные проекты
-- 🌍 [Hedgehog RP](https://github.com/MaSStiK/hedgehog-rp)
+- 🦔 [Hedgehog RP](https://github.com/MaSStiK/hedgehog-rp)
 - 🌍 [Онлайн карта](https://github.com/MaSStiK/map.hedgehog-rp)
 - 📊 [Статистика беседы](https://github.com/MaSStiK/stats.hedgehog-rp)
 

@@ -41,7 +41,7 @@ export default function AboutProject() {
                             <h3 className="text-gray"
                                 lang="x-hedgehog"
                                 title="Название на ежином"
-                            >Hedetricodes Que-hronicas</h3>
+                            >Hronılar dez hedegriqog</h3>
                             <Tooltip content={TitleTooltip} />
                         </div>
                     </div>

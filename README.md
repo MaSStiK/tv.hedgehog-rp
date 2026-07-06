@@ -5,7 +5,7 @@
 </p>
 
 # Hedgehog RP TV
-> **Main Project:** [hedgehog-rp](https://github.com/MaSStiK/hedgehog-rp)
+> **Main project:** [hedgehog-rp](https://github.com/MaSStiK/hedgehog-rp)
 
 **Hedgehog TV** is a video platform created for the Hedgehog RP universe to store and showcase every episode of the “Hedgehog Chronicles”. The service brings together content from different stages of the project, preserving its history, major events, and community stories in a single video archive.
 
@@ -32,6 +32,7 @@ The platform served as the central hub for the community's video content, provid
 - **Moment.js** - Date and time handling
 
 ## 📸 Screenshots
+
 <table>
     <tr>
         <td align="center" colspan="2">

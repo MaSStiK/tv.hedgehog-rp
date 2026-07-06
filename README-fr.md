@@ -32,6 +32,7 @@ La plateforme servait de centre de diffusion du contenu vidéo de la communauté
 - **Moment.js** - Gestion des dates et heures
 
 ## 📸 Captures d’écran
+
 <table>
     <tr>
         <td align="center" colspan="2">

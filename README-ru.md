@@ -32,6 +32,7 @@
 - **Moment.js** — работа с датой и временем
 
 ## 📸 Скриншоты сайта
+
 <table>
     <tr>
         <td align="center" colspan="2">

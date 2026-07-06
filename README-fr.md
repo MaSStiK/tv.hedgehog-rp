@@ -27,7 +27,7 @@ La plateforme servait de centre de diffusion du contenu vidéo de la communauté
 ## 🛠️ Technologies
 - **Next.js** - Base de l’application et routage
 - **React** - Interface utilisateur
-- **@tippyjs/react** - Info-bulles et éléments interactifs
+- **tippy.js** - Info-bulles et éléments interactifs
 - **clsx** - Composition conditionnelle des classes CSS
 - **Moment.js** - Gestion des dates et heures
 

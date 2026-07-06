@@ -27,7 +27,7 @@ The platform served as the central hub for the community's video content, provid
 ## 🛠️ Technologies
 - **Next.js** - Application framework and routing
 - **React** - User interface
-- **@tippyjs/react** - Tooltips and interactive UI elements
+- **tippy.js** - Tooltips and interactive UI elements
 - **clsx** - Conditional CSS class composition
 - **Moment.js** - Date and time handling
 

@@ -1,0 +1,8 @@
+/* На телефоне скрываем описание на странице с отзывами */
+
+/* Мобильная версия */
+@media (max-width: 900px) {
+    .reviews-page :is(.about-project, hr) {
+        display: none;
+    }
+}

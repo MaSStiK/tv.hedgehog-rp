@@ -1,21 +1,20 @@
 import Link from "next/link"
 import Image from "next/image"
-import Tooltip from "../Tooltip/Tooltip"
+import Tooltip from "@/components/Tooltip/Tooltip"
 
 import "./AboutProject.css"
 
 const TitleTooltip = (
-    <div>
-        <p>Ежиный: Hedetricodes Que-hronicas</p>
-        <p>Эрикградский: Ezh Chkroni</p>
-        <p>Римский: Hedgehog Paralipomenon</p>
+    <div className="flex-col gap-1">
+        <span>Ежиный: Hronılar dez hedegriqog</span>
+        <span>Эрикградский: Ezhevri del&#39;hronas</span>
+        <span>Римский: Hedgehog Paralipomenon</span>
     </div>
 )
 
 const AgeRatingTooltip = (
     <div>
-        <p>В видео могут присутствовать сцены и выражения, содержащие ненормативную лексику.</p>
-        <p>Автор не преследовал цели кого-либо оскорбить.</p>
+        <span>В видео могут присутствовать сцены и выражения, содержащие ненормативную лексику.</span>
     </div>
 )
 

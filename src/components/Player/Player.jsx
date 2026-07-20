@@ -53,7 +53,7 @@ export default function Player({ videoID }) {
                             onLoad={() => setIframeLoaded(true)}
                         />
                 </div>
-                : <span>🚧 Серия временно недоступна.<br/>Ёжики посмотрели её и сказали: Ну это уже перебор<br/>Серия вернётся, когда ёж на горе свистнет. Не раньше.</span>
+                : <span>🚧 Серия временно недоступна.<br/>Ёжики посмотрели её и сказали: Ну это уже перебор.<br/>Серия вернётся, когда ёж на горе свистнет.</span>
             }
             <div className="flex-col gap-1">
                 <PlayerInfo episode={episode} date={date} />

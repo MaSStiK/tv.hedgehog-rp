@@ -7,11 +7,13 @@ import season4 from "./season-4"
 export const seasons = {
     s1: {
         title: "Сезон 1",
-        episodes: season1
+        episodes: season1,
+        available: false
     },
     s2: {
         title: "Сезон 2",
-        episodes: season2
+        episodes: season2,
+        available: false
     },
     s3: {
         title: "Сезон 3",
@@ -25,7 +27,7 @@ export const seasons = {
 
 // Массив всех эпизодов
 export const episodes = Object.entries(seasons).flatMap(
-    ([seasonKey, { title, episodes }]) => {
+    ([seasonKey, { title, episodes, available = true }]) => {
         const seasonNumber = seasonKey.slice(1); // "4"
 
         return episodes.map(episode => ({
@@ -33,6 +35,7 @@ export const episodes = Object.entries(seasons).flatMap(
             seasonKey,          // "s4"
             seasonNumber,       // "4"
             seasonTitle: title, // "Сезон 4"
+            available
         }));
     }
 )

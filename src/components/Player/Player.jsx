@@ -18,6 +18,8 @@ export default function Player({ videoID }) {
     }, [videoID])
 
     const episode = getEpisode(videoID) // Получаем сам эпизод
+    console.log(episode);
+    
 
     // Преобразуем ISO в объект с данными о дате
     const date = isoToDate(episode.publishedAt)
@@ -33,23 +35,26 @@ export default function Player({ videoID }) {
 
     return (
         <section className="player">
-            <div className={episodeClass}>
-                <div className="player-frame__thumbnail">
-                    <Image src={thumbnailSrc}
-                        alt={episode.title}
-                        width={640}
-                        height={360}
-                    />
+            {episode.available
+                ? <div className={episodeClass}>
+                    <div className="player-frame__thumbnail">
+                        <Image src={thumbnailSrc}
+                            alt={episode.title}
+                            width={640}
+                            height={360}
+                        />
+                    </div>
+                        <iframe
+                            className="player-frame__iframe"
+                            key={videoSrc}
+                            src={videoSrc}
+                            allow="autoplay"
+                            allowFullScreen
+                            onLoad={() => setIframeLoaded(true)}
+                        />
                 </div>
-                <iframe
-                    className="player-frame__iframe"
-                    key={videoSrc}
-                    src={videoSrc}
-                    allow="autoplay"
-                    allowFullScreen
-                    onLoad={() => setIframeLoaded(true)}
-                />
-            </div>
+                : <span>🚧 Серия временно недоступна.<br/>Ёжики посмотрели её и сказали: Ну это уже перебор<br/>Серия вернётся, когда ёж на горе свистнет. Не раньше.</span>
+            }
             <div className="flex-col gap-1">
                 <PlayerInfo episode={episode} date={date} />
             </div>

@@ -18,8 +18,6 @@ export default function Player({ videoID }) {
     }, [videoID])
 
     const episode = getEpisode(videoID) // Получаем сам эпизод
-    console.log(episode);
-    
 
     // Преобразуем ISO в объект с данными о дате
     const date = isoToDate(episode.publishedAt)

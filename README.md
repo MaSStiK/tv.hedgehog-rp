@@ -5,6 +5,7 @@
 </p>
 
 # Hedgehog RP TV
+
 > **Main project:** [hedgehog-rp](https://github.com/MaSStiK/hedgehog-rp)
 
 **Hedgehog TV** is a video platform created for the Hedgehog RP universe to store and showcase every episode of the “Hedgehog Chronicles”. The service brings together content from different stages of the project, preserving its history, major events, and community stories in a single video archive.
@@ -12,6 +13,7 @@
 The platform served as the central hub for the community's video content, providing convenient access to episodes and historical materials.
 
 ## ✨ Features
+
 - Watch all episodes of the “Hedgehog Chronicles”
 - Convenient navigation through the video archive
 - Access content from different seasons and project eras
@@ -20,11 +22,13 @@ The platform served as the central hub for the community's video content, provid
 - Responsive interface for desktop and mobile devices
 
 ## 🔗 Related Projects
+
 - 🦔 [Hedgehog RP](https://github.com/MaSStiK/hedgehog-rp)
 - 🌍 [Interactive Map](https://github.com/MaSStiK/map.hedgehog-rp)
 - 📊 [Chat Statistics](https://github.com/MaSStiK/stats.hedgehog-rp)
 
 ## 🛠️ Technologies
+
 - **Next.js** - Application framework and routing
 - **React** - User interface
 - **clsx** - Conditional CSS class composition

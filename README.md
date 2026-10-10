@@ -35,6 +35,8 @@ The platform served as the central hub for the community's video content, provid
 - **Tippy.js** - Tooltips and interactive UI elements
 - **Moment.js** - Date and time handling
 
+<!-- portfolio:hide:start -->
+
 ## 📸 Screenshots
 
 <table>
@@ -58,3 +60,5 @@ The platform served as the central hub for the community's video content, provid
         </td>
     </tr>
 </table>
+
+<!-- portfolio:hide:end -->

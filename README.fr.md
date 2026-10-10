@@ -35,6 +35,8 @@ La plateforme servait de centre de diffusion du contenu vidéo de la communauté
 - **Tippy.js** - Info-bulles et éléments interactifs
 - **Moment.js** - Gestion des dates et heures
 
+<!-- portfolio:hide:start -->
+
 ## 📸 Captures d’écran
 
 <table>
@@ -58,3 +60,5 @@ La plateforme servait de centre de diffusion du contenu vidéo de la communauté
         </td>
     </tr>
 </table>
+
+<!-- portfolio:hide:end -->
